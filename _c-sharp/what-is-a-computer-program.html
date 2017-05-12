@@ -1,0 +1,358 @@
+<h1>What is a Computer Program</h1>
+<h2>Introduction</h2>
+<p>What is a computer program? A computer program is basically a set of instructions for manipulating information. To be of any value, the information used by a computer program must have a way to get into the program (input) and get out of the program (output). That may sound too simplistic, but ultimately it is entirely accurate; even the most sophisticated computer program can do nothing more than process information (albeit, in a very fast and efficient way), and no matter how cool the program looks, if there is no way to put information into it and get information out of it then it's not of much use to anyone.</p>
+<p>The most familiar kind of input and output (or I/O) in a computer program comes from the user. Textual information is entered (input) from the user via the keyboard and displayed (output) to the user via the monitor. Other means of user I/O can include computer mice, microphones, speakers, printers, fax machines, Braille readers, touch screens, stylus, etc.</p>
+<p>Besides handling user I/O, computer programs can also do file or database I/O. Computer files and databases allow information to be <em>persistent</em>. Information is said to be persistent when it can be stored outside of the computer program and later retrieved for further processing. The combination of a) user I/O, b) fast and accurate processing, and c) persistent information storage is what makes computer programs so useful.</p>
+
+
+
+
+<h2>Variables, Values and Data Types</h2>
+<h3>It's All About Information</h3>
+<div>Since computer programs are all about handling information, it is important to understand something about the different kinds of information programs deal with. Essentially, most information falls into one of the following categories:</div>
+<ul type="disc">
+    <li>Numeric information (e.g.: a person's age or the price of a vehicle)</li>
+    <li>Textual information (e.g.: the title of a book)</li>
+    <li>Conceptual information (e.g.: truth - whether a statement is considered true or false)</li>
+</ul>
+<div>These different kinds of information can be said to be <em>primitive</em>. They represent the most basic kind of data that today's computer programs have to deal with. These three kinds of information can be further subdivided into fundamental data types:</div>
+<table border="1">
+    <colgroup><col /><col /></colgroup>
+    <thead>
+        <tr>
+            <th>Category of Information</th>
+            <th>Basic Data Types</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Numeric</td>
+            <td>
+            <table summary="Simple list" border="0">
+                <tbody>
+                    <tr>
+                        <td>Integer - whole numbers</td>
+                    </tr>
+                    <tr>
+                        <td>Real - numbers with fractional components</td>
+                    </tr>
+                    <tr>
+                        <td>Currency - numbers representing monetary values</td>
+                    </tr>
+                </tbody>
+            </table>
+            </td>
+        </tr>
+        <tr>
+            <td>Textual</td>
+            <td>
+            <table summary="Simple list" border="0">
+                <tbody>
+                    <tr>
+                        <td>Character - a single letter or symbol</td>
+                    </tr>
+                    <tr>
+                        <td>String - a set of characters (with or without spaces)</td>
+                    </tr>
+                </tbody>
+            </table>
+            </td>
+        </tr>
+        <tr>
+            <td>Conceptual</td>
+            <td>
+            <table summary="Simple list" border="0">
+                <tbody>
+                    <tr>
+                        <td>Boolean - true/false, yes/no, on/off</td>
+                    </tr>
+                </tbody>
+            </table>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<div>Any meaningful handling of information requires the understanding of three related (but distinct) concepts: <em>variables</em>, <em>values</em>, and <em>data types</em>.</div>
+<div>In order for a computer program to manipulate information, it needs a way to hold or refer to information. This is the concept of a variable. A variable is a name or identifier used to refer to a single piece of information. It acts like a container that allows a program to refer to a piece of information indirectly, without being dependent on the exact content of that information. One analogy is that a variable is like a cup: a cup can be used to hold different kinds of liquids (water, juice, or even motor oil). The cup is independent of the liquid (the cup can even be empty), but it provides an effective way of working with a liquid (for example, measuring the amount of water used in a recipe).</div>
+<div>Besides the idea of a variable that can hold information, there is the concept of a <em>value</em>. Unlike a variable (which is only used to <em>refer</em> to a piece of information), a value is the specific information contained in a variable. Returning to the previous analogy of a cup, a value is like the specific liquid inside the cup (variable). What does a particular cup hold? Is it water or motor oil? The cup is not what's really important; what's important is what is in the cup (especially if you are making a recipe!).</div>
+<div>The final concept is one that has already been alluded to: the idea of a <em>data type</em>. A data type refers to the <em>kind</em> of information that a variable can hold. For example, the kind of material that a cup is designed to hold is a liquid. The description "liquid" is a description of the <em>type</em> of content that the cup can hold. A plate, on the other hand, is designed to hold a different kind of material - something that is solid (such as a steak or chicken cordon bleu). More specifically, the "data type" that a plate is intended to hold is "food" and <code>steak</code> would qualify as a type of food while <code>motor oil</code> would not. Notice that the concept of data type (e.g.: "food") can be applied to both the variable (<code>plate</code>) and the value (<code>steak</code>).</div>
+<div>This brings up an important consideration: The data type of a variable should be appropriate for the kind of information the variable is intended to hold. There is a close relationship between variables, values and data types, even though those three ideas refer to different things. Cups are used to hold liquids; plates are used to hold food; and a balloon is used to hold a gas. It would be entirely inappropriate (if not impossible) to use a balloon to hold a piece of cake! Using these analogies, the concepts of variable, value and data type can be clearly distinguished:</div>
+<table border="1">
+    <colgroup><col /><col /><col /></colgroup>
+    <thead>
+        <tr>
+            <th>Variable</th>
+            <th>Value</th>
+            <th>Data Type</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Cup</td>
+            <td>Orange Juice</td>
+            <td>Liquid</td>
+        </tr>
+        <tr>
+            <td>Plate</td>
+            <td>Black Forest Cake</td>
+            <td>Food</td>
+        </tr>
+        <tr>
+            <td>Balloon</td>
+            <td>Helium</td>
+            <td>Gas</td>
+        </tr>
+    </tbody>
+</table>
+<div>Returning to the way these concepts are used in a computer program, the following table gives some examples of variables and values for the data types fundamental to most high-level programming languages.</div>
+<table border="1">
+    <colgroup><col /><col /><col /></colgroup>
+    <thead>
+        <tr>
+            <th>Variable</th>
+            <th>Value</th>
+            <th>Data Type</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Age</td>
+            <td>25</td>
+            <td>Integer</td>
+        </tr>
+        <tr>
+            <td>PI</td>
+            <td>3.14159</td>
+            <td>Real</td>
+        </tr>
+        <tr>
+            <td>Cost</td>
+            <td>$4.95</td>
+            <td>Currency</td>
+        </tr>
+        <tr>
+            <td>Gender</td>
+            <td>'M'</td>
+            <td>Character</td>
+        </tr>
+        <tr>
+            <td>Title</td>
+            <td>"Computer Basics 101"</td>
+            <td>String</td>
+        </tr>
+        <tr>
+            <td>Success</td>
+            <td>True</td>
+            <td>Boolean</td>
+        </tr>
+    </tbody>
+</table>
+<div>
+<h3>Rules About Variables, Values and Data Types</h3>
+<div>It has been stated that while variables, values and data types are distinct concepts, they are closely related. This close association between these concepts allows us to work with and manipulate information. Before we can begin working with these concepts in a simple program, however, we need to establish some basic rules about <em>how</em> to work with variables, values and data types.</div>
+<div>The first rule has already been alluded to in the previous section: <em>The data type of a value must match the data type of the variable that stores the value</em>. This rule is closely related to a second rule: <em>A variable and its data type must be declared before the variable can be used</em>. Whenever a variable name is first identified in a computer program, the data type of the variable must be declared. Stating, or declaring, what the data type of a variable is will allow a computer program to know two things:</div>
+<ul type="disc">
+    <li>How much computer memory must be set aside for the variable's value.</li>
+    <li>How to interpret a value stored in a variable.</li>
+</ul>
+<div>A variable cannot be used until it is declared, and once a variable's data type has been identified it can only hold values that match that data type. For example, if a variable called <code>Status</code> has been declared as a character, then it can only hold a character value (such as 'T' or '5'). Any attempt to store a value of a different type (such as "<code>Temporary</code>") in <code>Status</code> would produce an error in the computer program.</div>
+<div>A third rule that is related to the second is that <em>once a variable's data type has been declared, its data type cannot be changed</em>. This is because a variable's data type tells the computer how to interpret the variable's value (e.g.: is it a character or a number?), and any attempt to change the data type would result in a misinterpretation of the previously stored value.</div>
+<div>Another rule is that <em>each primitive variable in a computer program can only hold a single value at any given moment in time</em>. The reason for this rule is so that the computer knows what value to supply when a variable is used in the program. In fact, when a primitive variable's data type is declared, the computer sets aside enough memory to store only one value - no more! If a new value is stored in the variable, then any previously stored value is lost. This also gives an advantage to the programmer - it is easier to plan for and test a computer program if you can predict what value will be stored in the variable. Since a variable can only hold one value at a time, it is not unusual for a computer program to use many variables.</div>
+<div>Notice that this last rule applies to variables with <em>primitive</em> data types. Often, computer programs allow the creation of more complex data types, such as classes and arrays. The rule of a variable storing only one value changes slightly for these complex types. In the case of classes, one variable whose type is based on a class can only store <em>one</em> object (even though the object might be complex and hold many values). Likewise, a variable that refers to an array can only refer to <em>one</em> array (even though arrays can hold many values). These complex data types will be discussed in a later lesson.</div>
+<div>Lastly, in order for a computer program to distinguish one variable from another, <em>each variable (in a given scope) must have a distinct name</em>. If two variables were given identical names, then the computer would not be able to tell which variable to use in a given calculation. By giving each variable a different name, it is easier for both the computer and the programmer to keep track of which ones to use.</div>
+<div>Notice, however, the qualification to this rule: <em>in a given scope</em>. In general, <em>scope</em> refers to the context in which a variable is used. If two variables are used in two different contexts, then it is permissible to use the same variable name because the computer uses the different contexts to tell them apart (similar to how two people can have the same first name but be distinguished from each other if they have different last names). An obvious (and trivial) example of this is if a variable called <code>Age</code> is used in two different computer programs, then the computer can tell which variable to use because it knows which program it is currently running. Usually, the term scope is used to refer to distinctly different contexts within the same computer program. The idea of scope will be discussed in more detail later. To begin with, most of the programs will be fairly simple and will only have one scope, so it is fair to simplify this rule as <em>each variable must have a distinct name</em>.</div>
+<div>In summary, the basic rules for variables, values and data types are:</div>
+<ul type="disc">
+    <li>Any value stored in a variable must be of the same data type as the variable.</li>
+    <li>Variables must be declared before they can be used.</li>
+    <li>A variable's data type can only be declared once.</li>
+    <li>Each primitive variable can only hold one value at a given time.</li>
+    <li>Each variable must have a distinct name.</li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2>Programming Languages and Coding Instructions</h2>
+
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title">Basic Data Manipulation</h3>
+</div>
+</div>
+</div>
+<p>Through variables, a computer program has the ability to manipulate the values stored in those variables. This manipulation of stored information is accomplished by giving the computer specific <span class="italic">instructions</span> on what manipulations to perform.</p>
+<div class="section" lang="en">
+<div class="titlepage">
+<div>
+<div>
+<h4 class="title">Languages</h4>
+</div>
+</div>
+</div>
+<p>The exact form that the instructions will take depends on the <em class="firstterm">programming language</em> that is used. These instructions are then examined by a special program (a compiler, an assembler, or an interpreter) and translated into <em class="firstterm">machine language</em>. Machine language consists of a series of ones (1) and zeros (0) which act as on and off switches in the computer's memory. These on and off switches change other information that is stored in memory, resulting in the manipulation of information.</p>
+<div class="sidebar">
+<p>The on and off switches in computer memory represent the flow of electricity through the computer. Millions and billions of these switches (also known as "gates" - no relation to Bill) are arranged on tiny computer chips in highly sophisticated patterns to allow for the organized flow of electricity. It is this organized flow of ones and zeros that allow us to use these machines for fast and efficient information processing.</p>
+</div>
+<p>Programming languages allow programmers to give instructions to a computer in a form that is more familiar to and easier to use by the programmer. Today's programming languages are known as <em class="firstterm">high-level</em> languages because they incorporate simple words with familiar meanings in English, such as <span><strong class="command">if</strong></span>, <span><strong class="command">else</strong></span>, <span><strong class="command">while</strong></span>, <span><strong class="command">do</strong></span>, and <span><strong class="command">return</strong></span>. <em class="firstterm">Low-level</em> languages, such as Assembler, use more cryptic commands and are much closer to machine language, thereby making them harder for programmers to work with.</p>
+</div>
+<div class="section" lang="en">
+<div class="titlepage">
+<div>
+<div>
+<h4 class="title">Doing the Math</h4>
+</div>
+</div>
+</div>
+<p>High-level programming languages (such as C++, C#, and Visual Basic) make it relatively easy to manipulate the values of variables. <em class="firstterm">Assignment statements</em> tell the computer to store specific values into specific variables. Assignment statements are often used with <em class="firstterm">expressions</em>, which are combinations of variables, values, and/or operators (such as <em class="firstterm">Arithmetic</em> operators). It is through expressions and assignment statements that the bulk of a computer's work is done.</p>
+<p>Expressions allow new values to be computed based on existing values. For example, if a variable called <code class="varname">Cost</code> has the value <code class="literal">$5.95</code> and another variable called <code class="varname">Markup</code> has a value of <code class="literal">2.0</code>, then a mathematical expression such as <code class="varname">Cost</code> * <code class="varname">Markup</code> can be used to create a new value - <code class="literal">$11.90</code> (the <code class="varname">Cost</code> multiplied by the <code class="varname">Markup</code> value). Using this expression in an assignment statement, this resulting value of the expression can then be stored in another variable:</p>
+<div class="informalexample">
+<p><code class="varname">Price</code> = <code class="varname">Cost</code> * <code class="varname">Markup</code></p>
+</div>
+<p>All numeric information can be used with the common arithmetic operators of addition, subtraction, multiplication, and division. When combined to create complex expressions, the commonly accepted rules of mathematics are used to determine which operations should be used first (multiplication and division before addition and subtraction). The order of operations can be modified by using parentheses, as in regular mathematics.</p>
+<p>Some arithmetic operations, such as calculating the remainder of a division operation, are only applicable to certain types of numeric information. Some languages supply a special symbol to represent these operations while other languages require the use of special library functions to perform the math. Complex arithmetic operations, such as calculating the sine of an angle, are typically done using library functions. Library functions are simply specialized routines or sets of instructions that can be called upon to do the required calculations.</p>
+<p>The following chart summarizes key arithmetic operations and their corresponding symbols as used in the more common high-level programming languages. The chart also shows some of the more complex operations and the names of the library functions used to calculate them (for specific details on using functions, see the documentation for the corresponding language). In addition, the arithmetic operations are shown as they typically appear in logical problem-solving diagrams such as flowcharts.</p>
+<div class="informaltable">
+<table border="1">
+    <colgroup><col /><col /></colgroup>
+    <thead>
+        <tr>
+            <th rowspan="2">Arithmetic Operation</th>
+            <th colspan="5">Symbols / Function Calls</th>
+        </tr>
+        <tr>
+            <th>C++</th>
+            <th>C#</th>
+            <th>Jscript</th>
+            <th>Visual Basic</th>
+            <th>SQL</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Addition</td>
+            <td>+</td>
+            <td>+</td>
+            <td>+</td>
+            <td>+</td>
+            <td>+</td>
+        </tr>
+        <tr>
+            <td>Subtraction</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Multiplication</td>
+            <td>*</td>
+            <td>*</td>
+            <td>*</td>
+            <td>*</td>
+            <td>*</td>
+        </tr>
+        <tr>
+            <td>Division</td>
+            <td>/</td>
+            <td>/</td>
+            <td>/</td>
+            <td>/</td>
+            <td>/</td>
+        </tr>
+        <tr>
+            <td>Remainder of Division</td>
+            <td>% <sup>[a]</sup></td>
+            <td>%</td>
+            <td>%</td>
+            <td>Mod</td>
+            <td>MOD(<em class="replaceable"><code>Division Expression</code></em>)</td>
+        </tr>
+        <tr>
+            <td>Square Root</td>
+            <td>sqrt( )</td>
+            <td>Math.Sqrt( )</td>
+            <td>sqrt( )</td>
+            <td>Sqr( )</td>
+            <td>SQR( )</td>
+        </tr>
+        <tr>
+            <td>Exponential Notation (Power)</td>
+            <td>pow( )</td>
+            <td>Math.Pow( )</td>
+            <td>pow( )</td>
+            <td>^</td>
+            <td>POWER( )</td>
+        </tr>
+        <tr>
+            <td>Sine</td>
+            <td>sin( )</td>
+            <td>Math.Sin( )</td>
+            <td>sin( )</td>
+            <td>Sin( )</td>
+            <td>SIN( )</td>
+        </tr>
+        <tr>
+            <td>Cosine</td>
+            <td>cos( )</td>
+            <td>Math.Cos( )</td>
+            <td>cos( )</td>
+            <td>Cos( )</td>
+            <td>COS( )</td>
+        </tr>
+        <tr>
+            <td>Tangent</td>
+            <td>tan( )</td>
+            <td>Math.Tan( )</td>
+            <td>tan( )</td>
+            <td>Tan( )</td>
+            <td>TAN( )</td>
+        </tr>
+        <tr>
+            <td>Parenthesis (affects order of operation)</td>
+            <td>( )</td>
+            <td>( )</td>
+            <td>( )</td>
+            <td>( )</td>
+            <td>( )</td>
+        </tr>
+    </tbody>
+    <tbody class="footnotes">
+        <tr>
+            <td colspan="2">
+            <div class="footnote">
+            <p><sup>[a] </sup>(for integers only)</p>
+            </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<p>The only "arithmetic" operation that is typically applied to string data types is addition. The addition of two strings is usually interpreted as the concatenation (joining together) of the two string values into a single string value.</p>
+<p>Besides performing assignment statements and expressions, programming languages have instructions that allow the program to control which instructions to perform and which ones to skip over. These <em class="firstterm">control statements</em> allow for performing mutually exclusive instructions (this <em>or</em> that) and for performing certain instructions repeatedly. High level languages also incorporate mechanisms to identify sets of instructions as particular groups or functions as well as ways to call these program-defined functions whenever they are needed.</p>
+</div>
+
+
+
+
+
+
+
+
+
+<h2>Summary</h2>
+
+<p>Information comes in various forms and programmers can create both simple and complex sets of instructions to manipulate that information. Successful computer programs combine the best techniques for user I/O, information processing, and persistent storage in order to meet the needs of individuals and businesses. Grasping the basic concepts of computer programs – variables, values, data types, I/O, assignments and expressions, and control statements – is fundamental to the efficient and effective development of computer software.</p>
+

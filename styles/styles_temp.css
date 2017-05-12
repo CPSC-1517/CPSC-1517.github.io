@@ -1,0 +1,108 @@
+/*** Resets ***/
+
+
+/*** Layout ***/
+body.basicLayout{
+    
+}
+
+nav.top {
+    
+}
+nav.left {
+    float: left;
+    min-width: 200px;
+    min-height: 100%;
+    margin-right: 15px;
+}
+
+nav.right {
+    float: right;
+    min-width: 200px;
+    height: 100%;
+    margin-left: 10px; 
+}
+
+main > header, main > article, main > footer {
+  
+}
+
+main>header {
+    
+}
+main>article {
+    
+}
+main>footer {
+    
+}
+
+/*** Components ***/
+
+/* Menu */
+nav ul {
+  list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.top ul {
+    flex-direction: row;
+    flex-wrap: nowrap; /* except for smaller screens */
+    justify-content: space-around;
+}
+
+.left ul, .right ul {
+    flex-direction: column;
+}
+
+
+/*** Asthetics ***/
+
+/* Menu */
+nav.top, nav.left, nav.right {
+    padding: 10px;    
+}
+
+nav.top a, nav.left a, nav.right a {
+    text-decoration: none;
+    color: #1950bf;
+}
+
+nav.top {
+    background-color:#ddd;    
+    font-size: 25px;
+}
+nav.left, nav.right {
+    background-color:#ddd;    
+    font-size: 18px;
+}
+nav.left li, nav.right li {
+    padding: 5px 0;
+}
+
+/* Content - Header, Main, Footer */
+header { position: relative;}
+header img {
+    float: left;
+    max-width: 150px;
+    border: 4px double #eee;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+header h1 {
+    font-size: 2.2em;
+}
+
+header p {
+    font-style: italic;
+    font-size: 1.15rem
+}
+
+main h1 {
+    font-size: 1.8em;
+}
+
+/*** Functional ***/
+.hide { display: none; }

@@ -1,0 +1,18 @@
+    {% for group in site.collections %}
+    {% if group.docs.size > 0 and page.path contains group.label %}
+    {% assign docs = group.docs | sort: 'sortorder', 'first'%}
+    {% for item in docs %}
+    {% if item.publish != false %}
+    <div class="card">
+        <h2><a href="{{ item.url | prepend: site.github.url }}">{{ item.title }}</a></h2>
+        <div>{{item.description}}</div>
+        {% if item.image %}
+        <img src="{{item.image}}" alt="" />
+        {% else %}
+        <img src="images/default.png" alt="" />
+        {% endif %}
+    </div>
+    {% endif %}
+    {% endfor %}
+    {% endif %}
+    {% endfor %}

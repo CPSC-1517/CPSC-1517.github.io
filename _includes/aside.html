@@ -1,0 +1,19 @@
+  <aside>
+    <!--<h1>Quick Links</h1>-->
+    <nav>
+      <ul>
+        {% for group in site.collections %}
+        {% if group.docs.size > 0 and page.path contains group.label %}
+        {% assign docs = group.docs | sort: 'sortorder', 'first'%}
+        {% for item in docs %}
+        {% if item.publish != false %}
+        <li>
+          <a {% if page.url == item.url %}class="active"{% endif %} href="{{item.url | prepend: site.github.url }}">{% if page.url == item.url %}&raquo; {% endif %}{{ item.title }}</a>
+        </li>
+        {% endif %}
+        {% endfor %}
+        {% endif %}
+        {% endfor %}
+      </ul>
+    </nav>
+  </aside>

@@ -1,0 +1,13 @@
+title: CPSC-1517
+description: Introduction to Application Development
+show_downloads: false
+encoding: utf-8
+collections:
+  c-sharp:
+    output: true
+  razor:
+    output: true
+  learning_outcomes:
+    output: true
+gems:
+  - github-pages

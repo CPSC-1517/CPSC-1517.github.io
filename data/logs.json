@@ -1,0 +1,490 @@
+[
+    {
+        "topic": "Course Introduction",
+        "logs": [ 
+            "Identify the best way to contact your instructor for questions/help",
+            "Describe the purpose of this course",
+            "List and determine if you have the prerequisites of this course",
+            "List the mark breakdown for this course",
+            "Explain how the evaluation of this course works",
+            "List the software you will need for this course",
+            "List the core achievements and topics for this course"
+        ]
+    },
+    {
+        "topic": "C# Language Review",
+        "logs": [ 
+            "Identify the programming language(s) used for this course.",
+            "Explain what is meant by a \"case-sensitive\" programming language.",
+            "Explain what is meant by a \"strongly-typed\" programming language",
+            "Describe the difference between variables, values and data types.",
+            "Explain what is meant by a \"literal value\".",
+            "Explain what a \"keyword\" is in any programming language.",
+            "Define the phrase \"intrinsic data type\".",
+            "List the data types that are built into the course's programming language and the default values for those data types.",
+            "Explain what an assignment statement is and how it works.",
+            "Explain what an \"expression\" is in any programming language.",
+            "List the assignment and arithmetic operators in the course's programming language.",
+            "Explain what \"string concatenation\" is and how it works.",
+            "Describe the difference between subroutines and functions.",
+            "Describe the purpose of subroutines and functions.",
+            "Identify the syntax for subroutines and functions in the course's programming language.",
+            "Define and distinguish the terms \"argument\" and \"parameter\".",
+            "Identify and describe the syntax of the statements associated with the five logical programming structures in the course's programming language.",
+            "List the relational and logical operators in the course's programming language.",
+            "Identify the entry point for every computer program.",
+            "Create a simple console program with functions and subroutines.",
+            "Perform simple console I/O.",
+            "Manipulate information with variables, values and expressions.",
+            "Create code using the five logical programming structures.",
+            "Create code for multi-structured logic (logic that includes many nested and stacked structures)"
+        ]
+    },
+    {
+        "topic": "C# OOP Basics",
+        "logs": [ 
+            "Code a class with properties, fields, methods and constructors",
+            "Distinguish auto-implemented properties from explicitly implemented properties",
+            "Describe the concept of \"constructor chaining\" and its benefits",
+            "Describe the purpose of the constructor",
+            "Create and use objects",
+            "Identify the Member Access Operator and its purpose",
+            "Describe the term Composition as it relates to Object Oriented Programming",
+            "Use a debugger to explore the state of objects at run-time",
+            "Describe the term Inheritance as it relates to Object Oriented Programming",
+            "Give an example of simple Polymorphism"
+        ]
+    },
+    {
+        "topic": "HTML5 Forms and Request/Response",
+        "logs": [ 
+            "List 15 or more common HTML5 elements and describe their purpose and usage",
+            "Distinguish between GET and POST requests to a web server",
+            "Describe how a browser processes an html document it has received",
+            "Describe the Request/Response communication that occurs between a browser and a web server",
+            "List at least four distinct pieces of information a browser sends in a typical request for an URL",
+            "Define the acronyms URL and URI",
+            "Define the acronyms HTTP and HTTPS",
+            "List the HTML5 form elements and describe their purpose and usage",
+            "Describe what is meant by the assertion that http is a stateless protocol"
+        ]
+    },
+    {
+        "topic": "Razor Introduction",
+        "logs": [ 
+            "Describe what is meant by \"Razor Syntax\"",
+            "List the server-side programming languages supported by Razor syntax and their common file extensions",
+            "Create a bare-bones Razor 3 Website",
+            "Identify the difference between Razor 2 and Razor 3 website templates in Visual Studio 2013",
+            "Describe the term \"context switching\" as it applies to Razor syntax",
+            "Explain how Razor syntax supports \"context switching\" in the server-side processing of a web page",
+            "Distinguish between server-side code and HTML code in a Razor web form",
+            "Describe what is meant by a \"code block\" in Razor syntax",
+            "Describe what a Layout Page is in Razor and list its benefits",
+            "List five key properties available to all Razor pages"
+        ]
+    },
+    {
+        "topic": "Using Razor with HTML Form Elements",
+        "logs": [ 
+            "Distinguish between Query String values and POST values in a page request",
+            "Describe three different ways to obtain HTML Form values sent to the web server in a page request using the Request object in Razor",
+            "Describe the purpose of the IsPost property",
+            "Retrieve, examine and use HTML Form values supplied to a Razor page",
+            "App_Data folder",
+            "App_Code folder",
+            "Create a database",
+            "NuGet for Microsoft.AspNet.WebPages.Data",
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+
+
+
+
+
+
+
+
+    {
+        "topic": "Introduction to Visual Studio",
+        "logs": [ 
+            "Define the term IDE",
+            "List the key tools available in Visual Studio",
+            "Describe the relationship between Solutions, Projects and Files in Visual Studio",
+            "List three different types of projects in Visual Studio",
+            "List three different web site templates in Visual Studio",
+            "Describe the following parts of the Visual Studio IDE: Editor Window, Toolbox, Solution Explorer, Server Explorer, Error List, Output Window",
+            "Identify the file extension for a Solution file",
+            "Create an empty ASP.Net website inside a solution",
+            "Create a Class Library project",
+            "Create a blank solution",
+            "Configure the tool options in Visual Studio",
+            "Ensure the Solution file (.sln) and Website folder are in the same location"
+        ]
+    },
+    {
+        "topic": "",
+        "logs": [ 
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "topic": "",
+        "logs": [ 
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "topic": "ASP.NET Web Forms and Controls",
+        "logs": [
+            "Answer the question “What is an ASPX page?”",
+            "Explain the purpose of the Design and Source views for ASPX pages",
+            "List the core ASP.Net web controls used in this course",
+            "Identify what is generated and sent to the browser from an ASPX page",
+            "Create an empty ASP.Net Website",
+            "Create and edit web forms",
+            "Create folders to organize images and pages on a website",
+            "Apply common HTML formatting for text on an ASPX page",
+            "Add ASP.Net controls to an ASPX page",
+            "Use the properties window to set the design-time properties of ASP.Net controls"
+        ]
+    },
+    {
+        "topic": "Master Pages",
+        "logs": [ 
+            "Distinguish the common usage of web forms and master pages",
+            "Define the term “CSS”",
+            "Distinguish between internal and external style sheets",
+            "Give examples of how CSS can affect the appearance of text, ASP.Net controls and HTML in a form.",
+            "Distinguish between master, content  pages and conventional web forms",
+            "Identify components of the master file and content page",
+            "Create and edit web forms and master pages",
+            "Use master pages and the Menu control to provide consistent site navigation",
+            "Use the properties window to set the design-time properties of ASP.Net controls",
+            "Apply common HTML formatting for text on an ASPX page",
+            "Demonstrate the effects of missing Content controls on the content page existing on the master file",
+            "Apply a simple submit event",
+            "Apply simple CSS styles to affect background color and font color"
+        ]
+    },
+    {
+        "topic": "Postbacks, Event Handling and Page Lifecycle",
+        "logs": [
+            "Describe the purpose and usage of the Page.IsPostback property",
+            "Explain what is meant by the term “Event Handling”",
+            "Explain what is meant by the term “Page Lifecycle”",
+            "List the common page and control events in ASP.Net Websites",
+            "Describe the relationship of the code-behind file to its web form (ASPX page)",
+            "Describe what happens on the server each time a web form is requested from the user’s browser",
+            "Create a set of web forms with ASP.Net server controls",
+            "Create empty event handler methods for Button and LinkButton controls"
+        ]
+    },
+    {
+        "topic": "Programming ASP.NET Controls",
+        "logs": [
+            "Describe the relationship of the code-behind file to its web form (ASPX page)",
+            "Describe what an event handler is used for",
+            "Describe what is unique about the page load event",
+            "Explain how and when to check the IsPostback property",
+            "List the commonly used properties of the following controls: TextBox, Label, CheckBox, DropDownList, RadioButtonList, Image, Calendar",
+            "List important properties common to all/most ASP.NET controls",
+            "Identify which property of an ASP.Net control is used to programmatically access the control",
+            "Create an event handler method for page load events",
+            "Create event handler methods for button click events",
+            "Access controls on a page to get/set properties and call methods of the control",
+            "Perform simple logic (using flow-control statements) to respond to common control events"
+        ]
+    },
+    {
+        "topic": "",
+        "logs": [ 
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "topic": "",
+        "logs": [ 
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "topic": "",
+        "logs": [ 
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "topic": "",
+        "logs": [ 
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "topic": "",
+        "logs": [ 
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "topic": "",
+        "logs": [ 
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "topic": "",
+        "logs": [ 
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "topic": "",
+        "logs": [ 
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "topic": "",
+        "logs": [ 
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "topic": "",
+        "logs": [ 
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "topic": "",
+        "logs": [ 
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "topic": "",
+        "logs": [ 
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "topic": "Introduction to Databases",
+        "logs": [
+            "Define the term \"Database\" as it relates to this course.",
+            "Identify the two central components of a database.",
+            "Define the acronyms DBMS and RDBMS",
+            "Describe the purpose of the major components of a DBMS",
+            "List the advantages of using a database technology",
+            "List the steps of the database design process"
+        ]
+    },
+    {
+        "topic": "Entity Relationship Diagrams",
+        "logs": [
+            "Define the term ERD.",
+            "Identify the parts of an ERD.",
+            "Define the terms Entity, Attribute and Relationships as they relate to databases.",
+            "Describe the difference between atomic and composite attributes",
+            "Describe the difference between stored and derived attributes",
+            "Explain the purpose of a primary key in a database table",
+            "Define the term technical key",
+            "Define the term concatenated key (also known as a composite key)",
+            "Define the term Foreign Key",
+            "Define the term cardinality.",
+            "List the three major types of cardinality.",
+            "Identify primary keys, foreign keys, and indexes on an ERD.",
+            "Identify the cardinality indicated by the relationship lines on an ERD.",
+            "Describe how to translate an Entity Relationship Diagram into English using a template pattern."
+        ]
+    },
+    {
+        "topic": "Normalization",
+        "logs": [
+            "List the reasons why we go through the process of \"normalizing\" metadata",
+            "Identify the \"normal forms\" up to and including 3NF",
+            "Describe the \"normal forms\" up to and including 3NF",
+            "Analyze source documents to distinguish between meta-data and data",
+            "Analyze a form to identify metadata (0NF) and create a list of the metadata",
+            "Remove repeating groups, if any, by isolating them into their own distinct entity (1NF) (while maintaining relationships)",
+            "Check for partial dependencies, if any (2NF)",
+            "Check for transitive dependencies, if any (3NF)",
+            "List key questions to ask yourself when checking whether you've correctly processed meta-data through 1NF to 3NF."
+        ]
+    },
+    {
+        "topic": "Generate ERDs from 3NF",
+        "logs": [
+            "Draw an ERD diagram to represent your final set of 3NF meta-data",
+            "Translate your ERD diagram into English so that you can verify your logical analysis of the database with your client",
+            "Merge ERD diagrams from various views/forms into a single, cohesive logical ERD",
+            "Identify when to introduce technical keys into your normalized entities",
+            "Use Visio to draw ERD diagrams",
+            "Identify good practices for laying out entities in an ERD"
+        ]
+    },
+    {
+        "topic": "Introduction to SQL",
+        "logs": [
+            "Define the acronym \"SQL\"",
+            "List the commonly used data types for columns in SQL (as used in this course)",
+            "Group the SQL data types into the three general kinds of primitive information",
+            "List the three general forms primitive information can take",
+            "Describe what is meant by the phrase \"Primitive Data Types\""
+        ]
+    },
+    {
+        "topic": "Writing DDL Statements in SQL",
+        "logs": [
+            "Describe the purpose of the DDL statements supported in the SQL programming language",
+            "Use SQL Server Management Studio to create and save SQL scripts",
+            "Write the SQL to CREATE simple tables",
+            "Write the SQL to Drop tables",
+            "Run (Execute) SQL statements in SQL Server Management Studio to create and drop tables",
+            "Run (Execute) calls to sp_help to view information on objects such as database tables",
+            "Describe and give examples of Column Constraints",
+            "Describe and give examples of Table Constraints",
+            "Write the SQL to specify Column Constraints for columns which function as Primary Keys and Foreign Keys",
+            "Write the SQL to specify Table Constraints for Composite Primary Keys",
+            "Describe the purpose of the Identity constraint as it relates to Primary Keys",
+            "Write the SQL to specify an Identity constraint on a column",
+            "Explain the importance of the order in which we create or drop tables when foreign key relationships are involved"
+        ]
+    },
+    {
+        "topic": "Using Constraints in SQL",
+        "logs": [
+            "Explain the meaning/purpose of the SQL value of NULL",
+            "Explain the importance of identifying whether a column should be NULL or NOT NULL",
+            "Explain what is meant by a \"default\" column value",
+            "Compare and contrast literal values in SQL",
+            "Write the SQL to specify Column Constraints for Default values on a column",
+            "Explain the purpose of CHECK constraints",
+            "Write the SQL to specify Check Constraints for a column",
+            "List the kinds of comparisons that are possible for Check constraints",
+            "Identify when to perform Tables Constraints and when to perform Column Constraints",
+            "Write the SQL to give explicit constraint names for Primary Key, Foreign Key, Default, and Check constraints",
+            "Use commonly accepted standards when naming Constraints",
+            "Write the SQL to specify Calculated (derived) columns, based on values from other columns",
+            "Write the SQL to CREATE complex tables with Identity columns, primary and foreign keys, defaults, and calculated columns"
+        ]
+    },
+    {
+        "topic": "Modifying Existing Databases",
+        "logs": [
+            "Identify some common reasons to modify an existing database",
+            "Explain why an ALTER statement is the preferred way to modify the structure and/or constraints on existing tables, rather than performing DROP/CREATE statements.",
+            "Write the SQL ALTER TABLE statements to add or drop columns on an existing table.",
+            "Write the SQL ALTER TABLE statements to add or drop constraints on an existing table.",
+            "Describe the purpose of indexes on SQL tables.",
+            "Describe the difference between Clustered and Non-Clustered indexes.",
+            "Write the SQL to create and drop indexes.",
+            "Describe the purpose of UNIQUE constraints in SQL.",
+            "Write the SQL to create UNIQUE constraints.",
+            "Identify the common functions in SQL Server for working with Date and Time values.",
+            "Organize your SQL Scripts for a clean, error-free, execution"
+        ]
+    },
+    {
+        "topic": "Simple SQL Queries",
+        "logs": [
+            "List the six clauses of the SELECT statement in SQL",
+            "Identify the purpose of SELECT statements",
+            "Identify the general order in which the clauses of a SELECT statement are executed in SQL Server",
+            "Construct queries to perform simple selects on database tables"
+        ]
+    },
+    {
+        "topic": "Multi-table Queries",
+        "logs": [
+            "Explain the difference between inner and outer joins as it affects the data retrieved in a query",
+            "Construct queries to perform simple selects on related database tables using INNER JOINs",
+            "Create queries involving outer joins",
+            "Create queries involving subqueries",
+            "Create queries involving unions"
+        ]
+    },
+    {
+        "topic": "Writing DML Statements in SQL",
+        "logs": [
+            "List the SQL statements that perform DML operations",
+            "Write the SQL to insert discrete values into a table as a single row",
+            "Write the SQL to insert multiple rows into a table",
+            "Write the SQL to update one or more rows in a table",
+            "Write the SQL to delete one or more rows from a table",
+            "Identitfy when to include a WHERE clause on your UPDATE and DELETE statements"
+        ]
+    },
+    {
+        "topic": "Creating Stored Procedures in SQL",
+        "logs": [
+            "Describe what stored procedures are and how they are created",
+            "Describe how stored procedures are used in SQL Server Management Studio",
+            "Describe how stored procedures are used in external applications (such as web applications)",
+            "Create stored procedures to perform simple and complex queries",
+            "Create stored procedures that accept parameters",
+            "Create stored procedures to perform DML tasks",
+            "Identify when stored procedures should be used"
+        ]
+    },
+    {
+        "topic": "Stored Procedures and Database-Level Transactions",
+        "logs": [
+            "Describe the term \"Database-Level Transaction\"",
+            "Explain when transactions are necessary in stored procedures",
+            "Explain what a COMMIT and ROLLBACK are in transactional processing",
+            "Identify some good principles in creating transactional stored procedures",
+            "Create stored procedures that perform transactions"
+        ]
+    },
+    {
+        "topic": "Creating Views in SQL",
+        "logs": [
+            "Describe what a database View is and how they are created",
+            "Distinguish between a View and a Table",
+            "Create database Views as part of denormalizing data",
+            "Use Views within SQL queries",
+            "Identify when Views can and cannot be used within DML statements"
+        ]
+    },
+    {
+        "topic": "Writing Triggers in SQL",
+        "logs": [
+            "Describe what triggers are in databases and how they are created",
+            "Describe how triggers are invoked (executed)",
+            "Write simple table-based triggers"
+        ]
+    }
+]

@@ -1,0 +1,202 @@
+<h1>Introduction to SQL</h1>
+
+<h2>The ESP Database <small>(Specifcations 1 - 4)</small></h2>
+
+<details>
+    <summary>Click to show/hide the ERD</summary>
+    <figure>
+        <img class="img-responsive center-block" src="/topics/ESP-Physical-ERD.png" />
+        <figcaption>Physical ERD of ESP - Specifications 1 through 4</figcaption>
+    </figure>
+</details>
+<!--<snip-github owner='DMIT-1508' repo='DMIT-1508-Demos' path='ESP/Scripts/ESP-DDL.sql' ref='' lines='1:6' lang='sql'></snip-github>-->
+
+<details>
+    <summary class="h3">Implementing Tables for Spec 1</summary>
+    <p>To support the first specifications document for Emergency Service and Product, four tables need to be created: Customers, Orders, InventoryItems, and OrderDetails.</p>
+    <figure>
+        <img class="img-responsive center-block" src="/topics/ESP-Physical-Spec-1.png" />
+        <figcaption>ESP - Spec 1 Tables</figcaption>
+    </figure>
+    <p>In addition to the details in the ERD, the following business rules need to be supported through constraints on the columns:</p>
+    <ul>
+        <li>
+            All data is required, except for the following:
+            <ul>
+                <li>Customers.PhoneNumber</li>
+                <li>InventoryItems.ItemDescription</li>
+            </ul>
+        </li>
+        <li>
+            The following must be identity columns:
+            <table class="table table-bordered table-condensed">
+                <tr class="info">
+                    <th>Table</th>
+                    <th>Column</th>
+                    <th>Initial Value</th>
+                    <th>Increment</th>
+                </tr>
+                <tr>
+                    <th>Customer</th>
+                    <td>CustomerNumber</td>
+                    <td>100</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <th>Orders</th>
+                    <td>OrderNumber</td>
+                    <td>200</td>
+                    <td>1</td>
+                </tr>
+            </table>
+        </li>
+        <li>
+            The following business rules must be enforced:
+            <table class="table table-bordered table-condensed">
+                <tr class="info">
+                    <th>Table</th>
+                    <th>Requirement</th>
+                </tr>
+                <tr>
+                    <th>Customers</th>
+                    <td>The Postal Code must follow the pattern for Canadian postal codes, without the space: <mark>A#A#A#</mark></td>
+                </tr>
+                <tr>
+                    <th>Customers</th>
+                    <td>Phone numbers must follow the pattern of <mark>(###)###-####</mark></td>
+                </tr>
+                <tr>
+                    <th>Customers</th>
+                    <td>The default province should be Alberta, and all provinces must expressed in their two-character code format. Only Candian provinces/territories are accepted.</td>
+                </tr>
+                <tr>
+                    <th>Orders</th>
+                    <td>The order's subtotal must be greater than zero.</td>
+                </tr>
+                <tr>
+                    <th>Orders</th>
+                    <td>The order's GST cannot be negative.</td>
+                </tr>
+                <tr>
+                    <th>Orders</th>
+                    <td>The order total should be a calculated value.</td>
+                </tr>
+                <tr>
+                    <th>InventoryItems</th>
+                    <td>Inventory items must have a positive, non-zero sale price</td>
+                </tr>
+                <tr>
+                    <th>OrderDetails</th>
+                    <td>Order detail quantities must be greater than zero, and should default to one item.</td>
+                </tr>
+                <tr>
+                    <th>OrderDetails</th>
+                    <td>The order detail selling price must not be less than zero (a sale price of zero is acceptable under some circumstances).</td>
+                </tr>
+                <tr>
+                    <th>OrderDetails</th>
+                    <td>The order detail amount should be a calculated value.</td>
+                </tr>
+            </table>
+        </li>
+    </ul>
+</details>
+
+<details>
+    <summary class="h3">Changes for Spec 1 Tables</summary>
+    <p>A number of small changes have been identified for the tables in the first specifications document. These changes should be made without dropping/re-creating the tables.</p>
+    <ul>
+        <li>Customer address information is no longer required (address, city, etc.)</li>
+        <li>The customer first and last name must be at least two characters in length.</li>
+        <li>The order data must default to the current date.</li>
+        <li>Inventory items require a description.</li>
+        <li>Customers should be searchable by first and/or last names.</li>
+    </ul>
+</details>
+
+<details>
+    <summary class="h3">Implementing Tables for Spec 2</summary>
+    <p>To implement the tables for ESP Specifications 2, we need to add two more tables: Payments and PaymentLogDetails.</p>
+    <figure>
+        <img class="img-responsive center-block" src="/topics/ESP-Physical-Spec-2.png" />
+        <figcaption>ESP - Spec 2 Tables</figcaption>
+    </figure>
+    <p>All of the columns are required columns, and the Payments.PaymentID must be a database-generated ID that starts at 1 and increments by 1. also, the PaymentType can only be 'Cash', 'Cheque' or 'Credit'. No other constraints need to be enforced at this time.</p>
+</details>
+
+<details>
+    <summary>Click to show/hide the ERD</summary>
+    <figure>
+        <img class="img-responsive center-block" src="/topics/ESP-Physical-Spec-3.png" />
+        <figcaption>ESP - Spec 3 Tables</figcaption>
+    </figure>
+</details>
+
+<details>
+    <summary>Click to show/hide the ERD</summary>
+    <figure>
+        <img class="img-responsive center-block" src="/topics/ESP-Physical-Spec-4.png" />
+        <figcaption>ESP - Spec 4 Tables</figcaption>
+    </figure>
+</details>
+
+
+<hr />
+<details>
+    <summary>TBA - Code Snippets</summary>
+    <figure>
+        <snip-github owner='DMIT-1508' repo='DMIT-1508-Demos' path='ESP/Scripts/ESP-DDL.sql' ref='cbd719dc06c2a7d3c5f1b7b5302f61a4dc22066a' lines='1:25' lang='sql'></snip-github>
+        <figcaption>SQL Comments</figcaption>
+    </figure>
+
+    <figure>
+        <snip-github owner='DMIT-1508' repo='DMIT-1508-Demos' path='ESP/Scripts/ESP-DDL.sql' ref='cbd719dc06c2a7d3c5f1b7b5302f61a4dc22066a' lines='26:28' lang='sql'></snip-github>
+        <figcaption>Create Database</figcaption>
+    </figure>
+
+    <figure>
+        <snip-github owner='DMIT-1508' repo='DMIT-1508-Demos' path='ESP/Scripts/ESP-DDL.sql' ref='e62bcd9b31fd4dc7eb4f458177a6a2744e622726' lines='14:18' lang='sql'></snip-github>
+        <figcaption>Use Database</figcaption>
+    </figure>
+
+    <figure>
+        <snip-github owner='DMIT-1508' repo='DMIT-1508-Demos' path='ESP/Scripts/ESP-DDL.sql' ref='184531ee3fdfc76aac723e2091c7308be7d9ee6b' lines='21:32' lang='sql'></snip-github>
+        <figcaption>Create Simple Tables - Customers</figcaption>
+    </figure>
+
+    <figure>
+        <snip-github owner='DMIT-1508' repo='DMIT-1508-Demos' path='ESP/Scripts/ESP-DDL.sql' ref='184531ee3fdfc76aac723e2091c7308be7d9ee6b' lines='34:41' lang='sql'></snip-github>
+        <figcaption>Create Simple Tables - Orders</figcaption>
+    </figure>
+
+    <figure>
+        <snip-github owner='DMIT-1508' repo='DMIT-1508-Demos' path='ESP/Scripts/ESP-DDL.sql' ref='184531ee3fdfc76aac723e2091c7308be7d9ee6b' lines='43:49' lang='sql'></snip-github>
+        <figcaption>Create Simple Tables - InventoryItems</figcaption>
+    </figure>
+
+    <figure>
+        <snip-github owner='DMIT-1508' repo='DMIT-1508-Demos' path='ESP/Scripts/ESP-DDL.sql' ref='184531ee3fdfc76aac723e2091c7308be7d9ee6b' lines='51:57' lang='sql'></snip-github>
+        <figcaption>Create Simple Tables - OrderDEtails</figcaption>
+    </figure>
+
+    <figure>
+        <snip-github owner='DMIT-1508' repo='DMIT-1508-Demos' path='ESP/Scripts/ESP-DDL.sql' ref='abae077d10ac50300c83561400eb0fe1deddb13a' lines='20:28' lang='sql'></snip-github>
+        <figcaption>Drop Table Statement</figcaption>
+    </figure>
+
+    <figure>
+        <snip-github owner='DMIT-1508' repo='DMIT-1508-Demos' path='ESP/Scripts/ESP-DDL.sql' ref='18576a372a707a91cf170ccb3d436ba6a836aece' lines='31:81' lang='sql'></snip-github>
+        <figcaption>Primary Key and Identity Constraints</figcaption>
+    </figure>
+
+    <figure>
+        <snip-github owner='DMIT-1508' repo='DMIT-1508-Demos' path='ESP/Scripts/ESP-DDL.sql' ref='bb1a302d74d2d657046e624a37ca8bb02044779f' lines='31:90' lang='sql'></snip-github>
+        <figcaption>Foreign Key Constraints</figcaption>
+    </figure>
+
+    <figure>
+        <snip-github owner='DMIT-1508' repo='DMIT-1508-Demos' path='ESP/Scripts/ESP-DDL.sql' ref='85b824b8b48d16ef1236dc738c29c5a714f26832' lines='21:28' lang='sql'></snip-github>
+        <figcaption>Drop Table - Order Matters</figcaption>
+    </figure>
+</details>
+
