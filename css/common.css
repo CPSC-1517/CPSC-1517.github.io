@@ -294,3 +294,8 @@ blockquote.beta:before {
   width: 130px;
   height: auto;
 }
+
+
+.opacity20 {
+  opacity: 0.20;
+}

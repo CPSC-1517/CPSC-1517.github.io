@@ -3,6 +3,8 @@ layout: home
 title: CPSC 1517 - Introduction to Application Development
 description: Course Introduction
 image: images/under-construction.png
+styles:
+  image: opacity20
 ---
 > NOTE: Notice of Disclaimer!
 > This site is under construction.
