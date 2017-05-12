@@ -9,9 +9,9 @@
     <h1 class="{{page.styles.title}}">{{page.title}}</h1>
     <div class="{{page.styles.description}}">{{page.description}}</div>
     {% if page.image %}
-    <img src="{{page.image}}" alt="" />
+    <img class="{{page.styles.image}}" src="{{page.image}}" alt="" />
     {% else %}
-    <img src="images/default.png" alt="" />
+    <img class="{{page.styles.image}}" src="images/default.png" alt="" />
     {% endif %}
   </header>
   {% include aside.html %}
