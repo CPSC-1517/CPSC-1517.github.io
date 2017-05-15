@@ -1,3 +1,14 @@
+pre.highlight {
+    border-left: 7px lightblue solid;
+    padding-left: 7px;
+    border-top: 1px lightblue solid;
+    border-bottom: 2px lightblue solid;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 10px 0 0 0 ;
+}
+
+
 .highlight .hll { background-color: #ffffcc }
 .highlight .c { color: #999988; font-style: italic } /* Comment */
 .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
