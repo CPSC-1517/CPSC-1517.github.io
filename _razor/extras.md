@@ -15,6 +15,7 @@ The following are recommended external resources related to Razor Web Pages.
 
 
 - **Razor Overview**
+  - [Introduction to ASP.NET Web Programming Using the Razor Syntax (C#)](https://docs.microsoft.com/en-us/aspnet/web-pages/overview/getting-started/introducing-razor-syntax-c)
   - [Razor Syntax](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/razor) (The authoritative notes from Microsoft)
   - [Razor Layout](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/layout)
   - [Razor API Quick Reference](https://docs.microsoft.com/en-us/aspnet/web-pages/overview/api-reference/asp-net-web-pages-api-reference)
