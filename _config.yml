@@ -9,5 +9,7 @@ collections:
     output: true
   learning_outcomes:
     output: true
+markdown: kramdown
+highlighter: rouge
 gems:
   - github-pages
