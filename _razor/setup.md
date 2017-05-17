@@ -101,7 +101,7 @@ Additionally, Visual Studio updates the web.config file so that the web server w
 
 <h2>Adding in Server-Side Code</h2>
 
-Razor Syntax allows you to include code that will run on the web server before the page is sent to the browser. For example, a block of code can be added to the Default page that will set the title for the page. That value can then be used in the `&lt;title&gt;` of the `&lt;head&gt;` as well as anywhere else, such as an `&lt;h1&gt;` in the body of the page.
+Razor Syntax allows you to include code that will run on the web server before the page is sent to the browser. For example, a block of code can be added to the Default page that will set the title for the page. That value can then be used in the `<title>` of the `<head>` as well as anywhere else, such as an `<h1>` in the body of the page.
 
 
 
