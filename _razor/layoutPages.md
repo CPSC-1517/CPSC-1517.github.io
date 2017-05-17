@@ -7,7 +7,7 @@ description: Setting up consistent site layout and navigation using Layout Pages
 styles:
   title: white
   description: white
-sortorder: 3
+sortorder: 40
 ---
 
 # Using Razor Layout Pages

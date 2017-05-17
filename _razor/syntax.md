@@ -6,7 +6,7 @@ description: Understanding how Razor syntax works
 styles:
   title: black
   description: black 
-sortorder: 1
+sortorder: 10
 ---
 # Introduction
 

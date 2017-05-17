@@ -7,7 +7,7 @@ description: How to use Razor Web Pages beginning with an empty ASP.Net Web Site
 styles:
   title: black
   description: black 
-sortorder: 2
+sortorder: 20
 ---
 # Bare-Bones Razor Pages
     

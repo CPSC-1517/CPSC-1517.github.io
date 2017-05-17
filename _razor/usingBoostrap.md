@@ -6,7 +6,7 @@ description: Using Bootstrap with Razor Websites
 styles:
   title: black
   description: black 
-sortorder: 4
+sortorder: 50
 ---
 # Using Bootstrap with Razor Websites
 

@@ -5,6 +5,8 @@ encoding: utf-8
 collections:
   c-sharp:
     output: true
+  html:
+    output: true
   razor:
     output: true
   learning_outcomes:
