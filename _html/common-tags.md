@@ -53,6 +53,7 @@ Where there is prose, there is an opportunity to create lists. HTML provides the
 ## Images
 
 > A picture is worth ten thousand words. <cite>Fred R. Barnard, 1927</cite>
+
 > But an image can cost thousands of bytes. <cite>Dan Gilleland, 2017</cite>
 
 HTML was originally all about *text*. But eventually the ability to include images on web pages was developed, and the internet has become awash with `<img>` tags that point to some picture to display in the browser.
