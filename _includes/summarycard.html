@@ -4,7 +4,7 @@
     {% for item in docs %}
     {% if item.publish != false %}
     <div class="card">
-        <h2><a href="{{ item.url | prepend: site.github.url }}">{{ item.title }}</a></h2>
+        <h2><a href="{{ item.url | prepend: site.github.url }}">{{forloop.index}} - {{ item.title }}</a></h2>
         <div>{{item.description}}</div>
         {% if item.image %}
         <img src="{{item.image}}" alt="" />
