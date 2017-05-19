@@ -98,7 +98,7 @@ The following snippet illustrates how the nesting of code works. The outermost c
 </style>
 
 
-<pre class="highlight"><code><span class="ishtml">&lt;h1&gt;Welcome to Razor Yhatzee!&lt;/h1&gt;
+<pre class="highlight"><span class="ishtml">&lt;h1&gt;Welcome to Razor Yhatzee!&lt;/h1&gt;
 &lt;p&gt;Here's the roll of 5 die:&lt;/p&gt;
 <span class="iscsharp">@{
   Random generator = new Random();
@@ -110,7 +110,7 @@ The following snippet illustrates how the nesting of code works. The outermost c
   }</span>
   &lt;/ul&gt;</span>
   // ... more code
-}</span></span></code></pre>
+}</span></span></pre>
 
 ----
 
