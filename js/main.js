@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", function(event) { 
-  //
-  
+  // Customized blockquote types (from compiled markdown)  
   var blockquotes = [...document.getElementsByTagName('blockquote')];
   blockquotes.forEach(e => {
     var classname = e.innerText.startsWith('TIP:') ? 'tip'
@@ -13,4 +12,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
       e.innerHTML = e.innerHTML.replace(classname.toUpperCase() + ':', '');
     }
   });
+
+  // Line numbers for code blocks
+  var blocks = document.querySelectorAll('pre>code');
+  blocks.forEach(e => e.innerHTML = e.innerHTML.replace(/^/gm,'<span class="number" />'));
 });
