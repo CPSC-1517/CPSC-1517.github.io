@@ -25,7 +25,7 @@ sortorder: 60
 
 # Showing Images
 
-```
+```charp
 @{
     Page.Title = "Manage Categories";
     Layout = "~/_SiteLayout.cshtml";
