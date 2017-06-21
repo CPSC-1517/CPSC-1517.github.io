@@ -3,7 +3,7 @@ layout: default
 publish: true
 image: images/books-1845614_1280.jpg
 title: Lab Requirements
-sortorder: 2
+sortorder: 1
 ---
 # CPSC1517 Project Specs
 

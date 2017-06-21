@@ -3,7 +3,7 @@ layout: default
 publish: true
 image: images/books-1845614_1280.jpg
 title: Lab Selection
-sortorder: 1
+sortorder: 2
 ---
 # Star-TED - Lab Selection
 
