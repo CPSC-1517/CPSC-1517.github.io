@@ -1,7 +1,7 @@
 ---
 layout: default
 publish: true
-image: /images/books-1845614_1280.jpg
+image: images/books-1845614_1280.jpg
 title: Star-TED Lab
 sortorder: 0
 ---
