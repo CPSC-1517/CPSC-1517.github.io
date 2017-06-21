@@ -1,7 +1,8 @@
 ---
 layout: default
 publish: true
-title: Lab Scenario
+image: /images/books-1845614_1280.jpg
+title: Lab Requirements
 sortorder: 2
 ---
 # CPSC1517 Project Specs

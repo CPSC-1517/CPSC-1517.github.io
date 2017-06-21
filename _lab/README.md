@@ -1,7 +1,8 @@
 ---
 layout: default
 publish: true
-title: Lab Scenario
+image: /images/books-1845614_1280.jpg
+title: Star-TED Lab
 sortorder: 0
 ---
 # Star-TED Lab
