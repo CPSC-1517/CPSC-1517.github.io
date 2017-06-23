@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: log
 publish: true
 image: 
 title: Razor and Databases

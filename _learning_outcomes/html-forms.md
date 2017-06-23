@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: log
 publish: true
 image: 
 title: HTML5 Forms and Request/Response
