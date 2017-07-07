@@ -131,18 +131,33 @@ This portion of the lab consists of the structured solution, documentation, and 
   * [ ] Requested Lab documentation placed as the home page for the site (Default.aspx)
   * [ ] List of known bugs & incomplete portions of lab
   * [ ] Entity Relationship Diagram of selected scenario
-  * [ ] Class diagram file of Entities in class library as well as exported image(s) on the Default page
+  * [ ] Class diagram file of Entities in class library (Display Full Signature) as well as exported image(s) on the Default page
+  * [ ] Class diagram file of Application class library (Display Full Signature) as well as exported image(s) on the Default page
 * Project Architecture & Code Quality
   * [ ] Client-Server architecture (three projects inside a single solution)
   * [ ] Master Page with functioning site-master based navigation, Scenario Title and student’s name
-  * [ ] Appropriate Entity classes coded for all the required tables
+  * [ ] Appropriate Entity CRUD class 
+  * [ ] Requested annotation for Entity CRUD class (Table, Key, NotMapped, DatabaseGeneration)
+  * [ ] Appropriate validation annotation for Entity CRUD class (Required, StringLength)
+  * [ ] Appropriate Entity support classes 
+  * [ ] Requested annotation for Entity support classes (Table, Key, NotMapped, DatabaseGeneration)
   * [ ] DAL class with appropriate code for all the required tables
+  * [ ] Proper references have been setup between projects.
 * Form A – Single Item CRUD
   * [ ] Blank form with title of selected option in the student’s scenario.
 * Form B – GridView Lookup with Code-Behind
   * [ ] Blank form with title of selected option in the student’s scenario.
 * Form C – GridView/FormView CRUD (must not use code-behind to populate controls)
   * [ ] Blank form with title of selected option in the student’s scenario.
+* Site.master Menu
+  * [ ] working web.sitemap has been created with Home, About, Contact and Form page entires.
+  * [ ] Site.master has been modified to use web.sitemap.
+  * [ ] Menu displays correctly and works, includes your name in the menu brand.
+* Configuration
+  * [ ] a separate web config file setup for connection strings (includes given default string and required connection string for the database.
+  * [ ] web.config file uses the separate web config connection strings file.
+  * [ ] web.config file uses Contexts tag for surpressing dynamic table creation by EntityFramework.
+  * [ ] Your DbContext class references proper connection string.
 
 ## **Part 2** – Scenario Number: ________
 
@@ -159,16 +174,22 @@ This portion of the lab consists of a functioning Form A, demonstrating Single I
   * [ ] BLL method(s) required for Delete
 * Form A – Single Item CRUD
   * [ ] Form correctly populates DropDownList controls on Page_Load event
+  * [ ] Form correctly applies an appropriate search technique (use of filter where requested)
   * [ ] Form correctly looks up and displays a single item
   * [ ] Form does not use DataSource controls to fill/populate data-bound controls
   * [ ] Form uses disabled (non-editable) controls for all data that is not related to Add/Update functionality
   * [ ] Form correctly uses Validation controls for client-side validation of Add/Update functionality
+  * [ ] Form correctly uses Validation controls for server-side validation of Add/Update functionality
   * [ ] Form correctly adds data to a database
   * [ ] Form correctly gives up-to-date feedback on whether the add was successful or not
+  * [ ] Form correctly refreshes the web page display whether the add was successful or not
   * [ ] Form correctly updates data in the database
   * [ ] Form correctly gives up-to-date feedback on whether the update was successful or not
+  * [ ] Form correctly refreshes the web page display whether the update was successful or not
   * [ ] Form correctly performs Delete of data (or equivalent) in the database
   * [ ] Form correctly gives up-to-date feedback on whether the attempted delete (as applicable) is successful
+  * [ ] Form correctly refreshes the web page display whether the delete was successful or not
+  * [ ] Messages correctly identifies items on the web page.
 
 ## **Part 3** – Scenario Number: ________
 
@@ -182,13 +203,21 @@ This portion of the lab consists of the functioning Forms B and C and the relate
   * [ ] BLL methods exposed for discovery
 * Form B – GridView Lookup with Code-Behind
   * [ ] Form correctly handles Page_Load event to populate DropDownList controls
+  * [ ] Form correctly applies an appropriate search technique (use of filter where requested)
   * [ ] Form correctly performs Lookup and binds data to a GridView control
   * [ ] GridView control uses column headers with meaningful names (not auto-generated)
+  * [ ] GridView control uses appropriate alignment and formating for displayed data
+  * [ ] GridView control displayes correct data
+  * [ ] GridView control has paging implemented
   * [ ] Form does not use DataSource controls to fill/populate data-bound controls
 * Form C – GridView/FormView CRUD (must not use code-behind to populate controls)
   * [ ] BLL methods set up for Data Bound controls (DataObject and DataObjectMethod attributes)
+  * [ ] Form correctly applies an appropriate search technique (use of filter where requested)
+  * [ ] Form correctly performs Lookup and binds data to a GridView control
   * [ ] Form uses DataSource control(s) to supply data to the GridView
-  * [ ] GridView correctly displays data in the form
   * [ ] GridView control uses column headers with meaningful names (not auto-generated)
+  * [ ] GridView control uses appropriate alignment and formating for displayed data
+  * [ ] GridView correctly displays data in the form
+  * [ ] GridView control has paging implemented
   * [ ] GridView control uses template columns with DropDownList control
 
