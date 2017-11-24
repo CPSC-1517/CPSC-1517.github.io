@@ -1,7 +1,7 @@
 ---
 layout: default
 publish: true
-imager: images/flat-browser-stats-1615611-639x419.jpg
+image: images/flat-browser-stats-1615611-639x419.jpg
 title: Razor Laout Pages
 description: Setting up consistent site layout and navigation using Layout Pages
 styles:
