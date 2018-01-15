@@ -14,7 +14,7 @@ collections:
   learning_outcomes:
     output: true
   lab:
-    output: true
+    output: false
 markdown: kramdown
 highlighter: rouge
 gems:
