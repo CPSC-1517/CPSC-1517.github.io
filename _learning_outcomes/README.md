@@ -79,6 +79,7 @@ At the end of this topic, you should be able to:
 * Define the acronyms URL and URI
 * Define the acronyms HTTP and HTTPS
 * List the HTML5 form elements and describe their purpose and usage
+* Describe the purpose of the `method` and `action` attributes on the `<form>` element
 * Describe what is meant by the assertion that http is a stateless protocol
 
 ## Razor Introduction
@@ -87,18 +88,86 @@ At the end of this topic, you should be able to:
 
 * Describe what is meant by "Razor Syntax"
 * List the server-side programming languages supported by Razor syntax and their common file extensions
-* Create a bare-bones Razor 3 Website
-* Identify the difference between Razor 2 and Razor 3 website templates in Visual Studio 2013
+* Create a bare-bones Razor Website
 * Describe the term "context switching" as it applies to Razor syntax
 * Explain how Razor syntax supports "context switching" in the server-side processing of a web page
 * Distinguish between server-side code and HTML code in a Razor web form
 * Describe what is meant by a "code block" in Razor syntax
-* Describe what a Layout Page is in Razor and list its benefits
-* List five key properties available to all Razor pages
+* Describe how server-side code is executed on a Razor web page
+  - The html and Razor code in a .cshtml page represents what is "executed" during the "render" phase of serving a page; therefore, all the server-side code actually has a "context" in which it runs.
 
+## Web Pages and Layout Pages in Razor
+
+At the end of this topic, you should be able to:
+
+* Describe what a Layout Page is in Razor and list its benefits
+* Describe the purpose of `@RenderBody()`, `@RenderSection()`, and `@RenderPage()` in a Layout Page
+* Explain how to reference and place content in a
+* List five key properties available to all Razor pages
+  - `.Page`
+    - `Page.Title`
+  - `.Layout`
+  - `.IsPost`
+  - `.Request`
+    - `.Request.Form`
+    - `.Request.QueryString`
+  - `.Response`
+    
 ## Using Razor with HTML Form Elements
 
 At the end of this topic, you should be able to:
+
+- Describe what is meant by **Name/Value** pairs in HTML forms
+- Describe how the `name` and `value` attributes of HTML form elements are used
+- Distinguish between Query String values and POST values in a page request
+- Describe three different ways to obtain HTML Form values sent to the web server in a page request using the Request object in Razor
+- Describe the purpose of the `.IsPost` property
+- Retrieve, examine and use HTML Form values supplied to a Razor page
+- Retain the user input in HTML form elements after the user submits a form
+
+## Form Validation in Razor and HTML5
+
+> The [MDN page on Form Validation](https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Form_validation) is an excellent resource for understanding client-side validation. Additionally, information on performing server-side validation using the `Validation` helper class can be found on [this page](https://docs.microsoft.com/en-us/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites).
+
+At the end of this topic, you should be able to:
+
+- Distinquish between client-side and server-side validation
+- Identify the reasons we validate on the client-side
+- Identify the reasons we validate on the server-side
+- Explain the role of the `required` attribute on HTML5 form elements
+- Explain the role of the `type` attribute options in HTML5 in regards to validation of user input
+- Describe the kind of user input allowed for each of the various `type` attribute values in HTML5
+- Identify the additional attributes for `<input>` elements which work in conjuncture with specific `type` attribute values in HTML5
+- Explain the role of the `placeholder` attribute
+- Explain why client-side validation is never considered a "secure" kind of user-input validation
+- Identify how to perform server-side validation manually with C#
+- Identify how to integrate server-side validation and client-side validation through the use of the `Validation` helper class in Razor
+- Combine server-side and client-side validation in Razor web pages.
+
+## Razor Helpers and Functions
+
+At the end of this topic, you should be able to:
+
+- Identify the purpose of `@functions` code blocks in Razor
+- Identify the purpose of `@helper` methods in Razor
+- Distinguish between `@functions` and `@helper` methods in Razor
+- Use functions and helpers to better "modularize" your Razor code
+- Identify and use built-in Razor helpers such as the `WebGrid`
+
+## Databases and C# Classes in Razor websites
+
+- Identify the different types of "asp folders" available in asp.net
+- Describe the purpose of the `App_Code` folder
+- Describe what is meant by a "connection string"
+- Create connection string entries in the web.config file
+- Access SQL Server databases in Razor pages to execute SQL statements for Create/Read/Update/Delete operations
+
+<!-- 
+- App_Data folder
+- App_Code folder
+- Create a database
+- NuGet for Microsoft.AspNet.WebPages.Data
+-->
 
 ## Introduction to Visual Studio
 
