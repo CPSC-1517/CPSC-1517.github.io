@@ -9,7 +9,7 @@ sortorder: 2
 
 > Star-TED – V 2016.2.12.143
 
-This document contains over 30 distinct scenarios for simple CRUD operations on the **Star-TED** database.
+This document contains upto 20 distinct scenarios for simple CRUD operations on the **StarTED** database.
 
 ## Choose Your Lab Scenario!
 
