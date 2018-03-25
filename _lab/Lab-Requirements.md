@@ -40,30 +40,30 @@ Your instructor will provide specific dates on each deliverable.
 
 ## The Visual Studio Solution
 
-Your solution must be a client-server solution consisting of multiple projects as outlined in the course. The Presentation Layer portion is to be an ASP.NET website. The BLL and DAL portions of the system are to be placed in a separate class library project. Likewise, the entities of the system must be in their own separate class library project.
+Your solution must be a client-server solution consisting of multiple projects as outlined in the course. The Presentation Layer portion is to be an ASP.NET web application. The BLL and DAL portions of the system are to be placed in a separate class library project. Likewise, the entities of the system must be in their own separate class library project.
 
 ## The Star-TED Database
 
-The database supplied for this lab is an SQL Server database named “Star-TED”. The following is a sample of the connection string that may be used for the Presentation Layer.
+The database supplied for this lab is an SQL Server database named “StarTED”. The following is a sample of the connection string that may be used for the Presentation Layer.
 
 
 ```xml
   <connectionStrings>
     <add name="StarTedDb"
-         connectionString="Data Source=.;Initial Catalog=Star-TED;Integrated Security=True"
+         connectionString="Data Source=.;Initial Catalog=StarTED;Integrated Security=True"
          providerName="System.Data.SqlClient" />
   </connectionStrings>
 ```
 
 ## The Forms
 
-There are three web forms for the core functionality of this project (described below). You must name the forms `FormA.aspx`, `FormB.aspx`, and `FormC.aspx`. In addition, you must have a `Default.aspx` web form at the root of your site that acts as the lab documentation for your selected scenario. All of these forms must share the same Master Page, which must provide navigation among all the pages in your web site.
+There are three web forms for the core functionality of this project (described below). You must name the forms `FormA.aspx`, `FormB.aspx`, and `FormC.aspx`. In addition, you must have a `Default.aspx` web form at the root of your web application that acts as the lab documentation for your selected scenario. All of these forms must share the same Master Page, which must provide navigation among all the pages in your web application.
 
 ### Master Page
 
 Your master page must contain the following elements:
 
-* Site Navigation – Links to all the pages in the web site (use the Menu control).
+* Site Navigation – Links to all the pages in the web application (use the Menu control).
 * Scenario Title – The number and name of the scenario (e.g.: G1 – Reservations by Group).
 * Student Name – Your first and last name.
 
@@ -91,7 +91,7 @@ This form is similar to the cumulative results of concepts demonstrated in the D
 For most of the scenarios, you will need to perform your look up in two steps. The reason for this is because there are far too many rows of data to put in a single drop-down list. For example, with thousands of *Students* in the database, it is impractical to fill a drop-down and expect a user to find the student they wish to edit. In these situations, a two-step selection process makes the form more managable by the user.
 
 1. First, gather user input to send to the supplied stored procedure so as to produce a "short-list" of items to select from. You can display this short list in either a `DropDownList`, `GridView` or `RadioButtonList` control.
-1. The second step is where the user can select a single item in the short list to edit.
+2. The second step is where the user can select a single item in the short list to edit.
 
 Also note that many of the scenarios will require you to have this two-stage selection process not only for choosing the row of data to edit, but also for selecting a related item as the foreign-key reference for the entity you are editing.
 
@@ -128,7 +128,7 @@ Each deliverable part is cumulative, building on previous deliverable parts of t
 This portion of the lab consists of the structured solution, documentation, and functioning code for required entities and DAL layer.
 
 * Lab Documentation (Web Form)
-  * [ ] Requested Lab documentation placed as the home page for the site (Default.aspx)
+  * [ ] Requested Lab documentation placed as the home page for the web application (Default.aspx)
   * [ ] List of known bugs & incomplete portions of lab
   * [ ] Entity Relationship Diagram of selected scenario
   * [ ] Class diagram file of Entities in class library (Display Full Signature) as well as exported image(s) on the Default page
@@ -145,10 +145,13 @@ This portion of the lab consists of the structured solution, documentation, and 
   * [ ] Proper references have been setup between projects.
 * Form A – Single Item CRUD
   * [ ] Blank form with title of selected option in the student’s scenario.
+  * [ ] Content page Title set to CRUD -StartTED
 * Form B – GridView Lookup with Code-Behind
   * [ ] Blank form with title of selected option in the student’s scenario.
+  * [ ] Content page Title set to Query -StartTED
 * Form C – GridView/FormView CRUD (must not use code-behind to populate controls)
   * [ ] Blank form with title of selected option in the student’s scenario.
+  * [ ] Content page Title set to ODS -StartTED
 * Site.master Menu
   * [ ] working web.sitemap has been created with Home, About, Contact and Form page entires.
   * [ ] Site.master has been modified to use web.sitemap.
