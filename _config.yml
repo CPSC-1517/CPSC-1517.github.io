@@ -13,7 +13,7 @@ collections:
     output: true
   learning_outcomes:
     output: true
-  _lab:
+  lab:
     output: true
 markdown: kramdown
 highlighter: rouge
