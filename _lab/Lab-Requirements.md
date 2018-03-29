@@ -27,7 +27,7 @@ Your instructor will provide information on
 
 A detailed marking guide is provided at the end of this document. For this lab, the student must demonstrate their working Visual Studio solution in **three** parts (listed below). Each demonstration of the student’s scenario must be presented to the instructor **in-class** in order to gain the marks for that part.
 
-*	**Part 1:** 10 % –  Due: First class of week 12
+*	**Part 1:** 10 % –  Due: Second class of week 13
   *	Initial solution with documentation and navigation
 *	**Part 2:** 15 % – Due: Second class of week 14
   * Form A
