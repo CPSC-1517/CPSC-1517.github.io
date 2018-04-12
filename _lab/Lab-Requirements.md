@@ -7,11 +7,11 @@ sortorder: 1
 ---
 # CPSC1517 Project Specs
 
-> ***Star-TED*** Database - A simple database for a post-secondary school.
+> ***StarTED*** Database - A simple database for a post-secondary school.
 
 ## Overview
 
-This document outlines the marking guide and general requirements for the lab. Each student is expected to select one scenario from the catalogue of scenarios developed for the ***Star-TED*** database. Every student in the class is required to select a different scenario, so that the details of each student’s lab are unique. For that scenario, the student must complete three fully-functional forms:
+This document outlines the marking guide and general requirements for the lab. Each student is expected to select one scenario from the catalogue of scenarios developed for the ***StarTED*** database. Every student in the class is required to select a different scenario, so that the details of each student’s lab are unique. For that scenario, the student must complete three fully-functional forms:
 
 *	Form A – Single item Create/Read/Update/Delete.
 *	Form B – GridView Lookup with Code-Behind.
@@ -42,14 +42,14 @@ Your instructor will provide specific dates on each deliverable.
 
 Your solution must be a client-server solution consisting of multiple projects as outlined in the course. The Presentation Layer portion is to be an ASP.NET web application. The BLL and DAL portions of the system are to be placed in a separate class library project. Likewise, the entities of the system must be in their own separate class library project.
 
-## The Star-TED Database
+## The StarTED Database
 
-The database supplied for this lab is an SQL Server database named “StarTED”. The following is a sample of the connection string that may be used for the Presentation Layer.
+The database supplied for this lab is an SQL Server database named “StarTED”. The following is a sample of the connection string that may be used for the Presentation Layer. Retain your default connection string when creating the connection string webconfig file.
 
 
 ```xml
   <connectionStrings>
-    <add name="StarTedDb"
+    <add name="StarTEDDb"
          connectionString="Data Source=.;Initial Catalog=StarTED;Integrated Security=True"
          providerName="System.Data.SqlClient" />
   </connectionStrings>
@@ -133,6 +133,7 @@ This portion of the lab consists of the structured solution, documentation, and 
   * [ ] Entity Relationship Diagram of selected scenario
   * [ ] Class diagram file of Entities in class library (Display Full Signature) as well as exported image(s) on the Default page
   * [ ] Class diagram file of Application class library (Display Full Signature) as well as exported image(s) on the Default page
+  * [ ] Stored Procedures – A bulleted list of all the stored procedures used in your project on the Default page
 * Project Architecture & Code Quality
   * [ ] Client-Server architecture (three projects inside a single solution)
   * [ ] Master Page with functioning site-master based navigation, Scenario Title and student’s name
@@ -144,14 +145,14 @@ This portion of the lab consists of the structured solution, documentation, and 
   * [ ] DAL class with appropriate code for all the required tables
   * [ ] Proper references have been setup between projects.
 * Form A – Single Item CRUD
-  * [ ] Blank form with title of selected option in the student’s scenario.
-  * [ ] Content page Title set to CRUD -StartTED
+  * [ ] Blank form with title of selected option in the student’s scenario and page banner title.
+  * [ ] Content page Title set to CRUD - StarTED
 * Form B – GridView Lookup with Code-Behind
-  * [ ] Blank form with title of selected option in the student’s scenario.
-  * [ ] Content page Title set to Query -StartTED
-* Form C – GridView/FormView CRUD (must not use code-behind to populate controls)
-  * [ ] Blank form with title of selected option in the student’s scenario.
-  * [ ] Content page Title set to ODS -StartTED
+  * [ ] Blank form with title of selected option in the student’s scenario and page banner title.
+  * [ ] Content page Title set to Query - StarTED
+* Form C – GridView (must not use code-behind to populate controls)
+  * [ ] Blank form with title of selected option in the student’s scenario and page banner title.
+  * [ ] Content page Title set to ODS - StarTED
 * Site.master Menu
   * [ ] working web.sitemap has been created with Home, About, Contact and Form page entires.
   * [ ] Site.master has been modified to use web.sitemap.
@@ -168,7 +169,7 @@ This portion of the lab consists of a functioning Form A, demonstrating Single I
 
 * Lab Documentation (Web Form)
   * [ ] List of known bugs & incomplete portions of lab
-*Project Architecture & Code Quality
+* Project Architecture & Code Quality
   * [ ] Proper & consistent use of exceptions and exception handling
   * [ ] Separate BLL classes coded for all the required tables
   * [ ] BLL method(s) required for all form queries
@@ -213,7 +214,7 @@ This portion of the lab consists of the functioning Forms B and C and the relate
   * [ ] GridView control displayes correct data
   * [ ] GridView control has paging implemented
   * [ ] Form does not use DataSource controls to fill/populate data-bound controls
-* Form C – GridView/FormView CRUD (must not use code-behind to populate controls)
+* Form C – GridView Lookup using ObjectDataSource (must not use code-behind to populate controls)
   * [ ] BLL methods set up for Data Bound controls (DataObject and DataObjectMethod attributes)
   * [ ] Form correctly applies an appropriate search technique (use of filter where requested)
   * [ ] Form correctly performs Lookup and binds data to a GridView control
