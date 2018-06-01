@@ -4,7 +4,7 @@ module.exports = {
     dest: 'docs',
     themeConfig: {
         nav: [
-            { text: 'Home', link: '/' },
+            { text: 'Home', link: '/about/' },
             { text: 'C-Sharp', link: '/csharp/' },
             { text: 'Html', link: '/html/' },
             { text: 'Razor', link: '/razor/' },
@@ -15,8 +15,7 @@ module.exports = {
         ],
         sidebar: {
             '/csharp/': [
-                ''
-                ,
+                '',
                 'c-sharp-lang-resources',
                 'programming-fundamentals-study-sheet'
             ],
@@ -74,10 +73,11 @@ module.exports = {
             ],
 
             // fallback
-            '/': [
-                'about/colophon',
-                'acout/todo',
-                'about-markdown-syntax'
+            '/about/': [
+                '',
+                'colophon',
+                'todo',
+                'markdown-syntax'
             ]
         }
     }
