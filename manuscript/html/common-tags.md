@@ -1,12 +1,6 @@
 ---
-layout: default
-publish: true
 title: HTML5 Elements
 description: A short list of some of the most commonly used HTML5 elements.
-styles:
-  title: black
-  description: black 
-sortorder: 20
 ---
 # Commonly Used Elements
 
@@ -52,9 +46,9 @@ Where there is prose, there is an opportunity to create lists. HTML provides the
 
 ## Images
 
-> A picture is worth ten thousand words. <cite>Fred R. Barnard, 1927</cite>
+> A picture is worth ten thousand words. - Fred R. Barnard, 1927
 
-> But an image can cost thousands of bytes. <cite>Dan Gilleland, 2017</cite>
+> But an image can cost thousands of bytes. - Dan Gilleland, 2017
 
 HTML was originally all about *text*. But eventually the ability to include images on web pages was developed, and the internet has become awash with `<img>` tags that point to some picture to display in the browser.
 
@@ -66,7 +60,7 @@ Thus, the `<img>` element was developed with a `src` attribute that points to a 
 <img src="https://upload.wikimedia.org/wikipedia/en/c/c0/Les_Horribles_Cernettes_in_1992.jpg" />
 ```
 
-![](https://upload.wikimedia.org/wikipedia/en/c/c0/Les_Horribles_Cernettes_in_1992.jpg)
+![Sample Image](https://upload.wikimedia.org/wikipedia/en/c/c0/Les_Horribles_Cernettes_in_1992.jpg)
 
 
 ## Tables

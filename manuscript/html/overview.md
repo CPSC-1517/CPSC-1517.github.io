@@ -1,18 +1,12 @@
 ---
-layout: default
-publish: true
 title: HTML5 Primer
 description: A quick background to HTML
-styles:
-  title: black
-  description: black 
-sortorder: 10
 ---
 # The Languages of the Web
 
 HTML, CSS and JavaScript are the languages of the World Wide Web. They are the source code out of which web browsers know what and how to render rich, interactive content to users.
 
-![](images/html-css-js-funnel.png)
+<!-- ![HTML - CSS - JS] - (../images/html-css-js-funnel.png) -->
 
 **HTML** (Hyper-Text Markup Language) is used to identify the *content* of a web page (its text, images, etc.). **CSS** (Cascading Style Sheet) is used to affect the *presentation* of the content (colors, positioning, font-family, etc.). **JS** (JavaScript) is used to control the *functionality* of the web page in the browser (giving the user an interactive experience). Each language is worthy of its own dedicated course. For our purposes, we will give a simple review of only some key aspects of HTML.
 
@@ -50,4 +44,4 @@ While these are guidelines, they are not rules. In actuality, HTML retains a lot
 
 Browsers may be forgiving in interpreting HTML, but co-workers and employers are not. ***That*** is the reason for following guidelines when writing HTML. Everytime you write code, you are creating something that *someone* (perhaps *you*) is going to have to maintain over time. As Harold Abelson has said,
 
-> "Programs must be written for people to read, and only incidentally for machines to execute." <cite>Harold Abelson, Structure and Interpretation of Computer Programs</cite>
+> "Programs must be written for people to read, and only incidentally for machines to execute." - Harold Abelson, "Structure and Interpretation of Computer Programs"

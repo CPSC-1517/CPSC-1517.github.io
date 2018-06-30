@@ -1,6 +1,6 @@
 module.exports = {
-    title: 'Hello VuePress',
-    description: 'Just playing around',
+    title: 'CPSC-1517 Student Notes',
+    description: 'Introduction to Application Development',
     dest: 'docs',
     themeConfig: {
         nav: [
@@ -11,6 +11,7 @@ module.exports = {
             { text: 'Webforms', link: '/webforms/' },
             { text: 'Lab', link: '/lab/' },
             { text: 'LOGs', link: '/logs/' },
+            { text: 'Issues/Bugs', link: 'https://github.com/CPSC-1517/CPSC-1517-StudentNotes/issues/new' },
             { text: 'Moodle', link: 'https://moodle.nait.ca' },
         ],
         sidebar: {
