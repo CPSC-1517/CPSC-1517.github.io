@@ -62,7 +62,6 @@ Thus, the `<img>` element was developed with a `src` attribute that points to a 
 
 ![Sample Image](https://upload.wikimedia.org/wikipedia/en/c/c0/Les_Horribles_Cernettes_in_1992.jpg)
 
-
 ## Tables
 
 Tabular data is rendered using the various table elements: `<table>`, `<tr>`, `<td>`, and `<th>` . The table element is the root for the tabular data while the `<tr>` tag is used for a row of cells and the `<td>` is used to wrap the cell's contents. The `<th>` is just like a table-cell, but acts as a cell that holds header information (like a column header).
