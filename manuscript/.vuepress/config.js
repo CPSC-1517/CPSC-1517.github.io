@@ -46,12 +46,6 @@ module.exports = {
                 '02-servercontrols'
             ],
 
-            '/lab/': [
-                '',
-                'Lab-Requirements',
-                'Lab-ProjectSelection'
-            ],
-
             '/logs/': [
                 '',
                 'a-course-intro',
