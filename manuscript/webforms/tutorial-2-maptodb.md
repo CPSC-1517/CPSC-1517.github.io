@@ -1,22 +1,25 @@
-﻿# Mapping to the Database - Part 2 of 9
+﻿---
+title: Mapping to the Database
+---
+# Mapping to the Database - Part 2 of 9
+
+:::warning OBSOLETE
+The content in this demo is obsolete. Use the Entity Framework library as demonstrated in class.
+:::
 
 This series of hands-on tutorials are designed to demonstrate how to build a web application that uses a Client-Server architecture and that persists information in a database. Each tutorial will walk the reader through steps to build upon a specific web application scenario based upon the Northwind Traders database.
 
 There are nine tutorials in this package. Each hands-on tutorial has a Starter Kit folder with all of the required material to begin the tutorial and a Solution folder with the final product of the tutorial.
 
-![](tutorial-2/image043.jpg)
-
+![Products and Categories](./tutorial-2/image043.jpg)
 
 ## Mapping to the Database
 
-*   Estimated time: 30 minutes.
-*   Parts:
-    1.  **Creating Custom Business Objects (CBOs)**  
-        This part of the tutorial focuses on creating classes for business entities that have a one-to-one mapping with the tables in the database
-    2.  **The Abstract DAL Provider**  
-        In this part of the tutorial, a base class is developed for the upcoming DAL classes. This base class will centralize access to the database and define common methods for mapping database data to the business entities.
-    3.  **Mapping the Data**  
-        The final part of this tutorial finishes off the mapping of database information to specific business entities. The classes created here will serve as the primary DAL classes for each business entity in the upcoming tutorials.
+* Estimated time: 30 minutes.
+* Parts:
+  1. **Creating Custom Business Objects (CBOs)** - This part of the tutorial focuses on creating classes for business entities that have a one-to-one mapping with the tables in the database
+  2. **The Abstract DAL Provider** - In this part of the tutorial, a base class is developed for the upcoming DAL classes. This base class will centralize access to the database and define common methods for mapping database data to the business entities.
+  3. **Mapping the Data** - The final part of this tutorial finishes off the mapping of database information to specific business entities. The classes created here will serve as the primary DAL classes for each business entity in the upcoming tutorials.
 
 ----
 
@@ -28,24 +31,19 @@ The two tables which will be mapped to the application in Part 3 are the Categor
 
 ### Setup
 
-For this lab, you will need the NorthwindExtended database. The Starter Kit folder contains a folder with a backup of this database named “NorthwindExtended.bak”. Before starting this tutorial, restore this database to your local installation of Microsoft SQL Server.
+For this lab, you will need the NorthwindExtended database. The Starter Kit folder contains a folder with a backup of this database named "NorthwindExtended.bak". Before starting this tutorial, restore this database to your local installation of Microsoft SQL Server.
 
-Note: If you don’t have the full version of SQL Server installed on your computer, you can restore the database to SQL Express instead. In this case, you would need to use “./SQLEXPRESS” as the Server Name and Data Source.
+Note: If you don't have the full version of SQL Server installed on your computer, you can restore the database to SQL Express instead. In this case, you would need to use "./SQLEXPRESS" as the Server Name and Data Source.
 
 ### Part 1 – Creating Custom Business Objects (CBOs)
 
 This part of the tutorial focuses on creating classes for business entities that have a one-to-one mapping with the tables in the database. Two classes will be created, one for data in the Products table and one for the Categories table.
 
-1.  Open Server Explorer and add a connection to the NorthwindExtended database.
+1. Open Server Explorer and add a connection to the NorthwindExtended database. <br /> ![Add Connection](./tutorial-2/image045.jpg)
 
-    ![](tutorial-2/image045.jpg)
+2. Expand the database in Server Explorer until you see a list of the tables. Right-click on the Categories table and select Open Table Definition. This will allow you to see the column names and data types for Categories data. <br />![Open Table Definition](./tutorial-2/image047.jpg) <br />![Category Table Definition](./tutorial-2/image049.jpg)
 
-2.  Expand the database in Server Explorer until you see a list of the tables. Right-click on the Categories table and select Open Table Definition. This will allow you to see the column names and data types for Categories data.
-
-    ![](tutorial-2/image047.jpg)
-    ![](tutorial-2/image049.jpg)
-
-3.  Add a class to the NorthwindEntities solution and name it Category. In this class, create a single property for each column in the Categories table. This new Category class is a custom business object (CBO) or business entity that, when instantiated, will hold the data for a single row from the Categories table.
+3. Add a class to the NorthwindEntities solution and name it Category. In this class, create a single property for each column in the Categories table. This new Category class is a custom business object (CBO) or business entity that, when instantiated, will hold the data for a single row from the Categories table.
 
 ```csharp
 using System;
@@ -63,7 +61,7 @@ namespace NorthwindEntities
 }
 ```
 
-4.  Add two constructors for this class. The first one will be a “greedy” constructor, and will have one parameter for each property of the class. The second will be a parameter-less constructor which will leave the properties un-initialized. The parameter-less constructor will offer flexibility when instantiating while the greedy constructor will be helpful for developers who want to set initial property values when they create their CBO.
+4. Add two constructors for this class. The first one will be a "greedy" constructor, and will have one parameter for each property of the class. The second will be a parameter-less constructor which will leave the properties un-initialized. The parameter-less constructor will offer flexibility when instantiating while the greedy constructor will be helpful for developers who want to set initial property values when they create their CBO.
 
 ```csharp
 #region Constructors
@@ -80,9 +78,7 @@ public Category()
 #endregion
 ```
 
-5.  Repeat steps 2-4 for the Products table. Create a CBO class named Product that has a property for each table column and two constructors. Use nullable types for properties whenever a column allows null values.
-
-    ![](tutorial-2/image051.jpg)
+5. Repeat steps 2-4 for the Products table. Create a CBO class named Product that has a property for each table column and two constructors. Use nullable types for properties whenever a column allows null values. <br />![Product Table Definition](./tutorial-2/image051.jpg)
 
 ```csharp
 using System;
@@ -103,7 +99,11 @@ namespace NorthwindEntities
         public bool Discontinued { get; set; }
         #endregion
         #region Constructors
-        public Product(int productID, string productName, int? supplierID, int? categoryID, string quantityPerUnit, decimal? unitPrice, short? unitsInStock, short? unitsOnOrder, short? reorderLevel, bool discontinued)
+        public Product(int productID, string productName,
+                       int? supplierID, int? categoryID,
+                       string quantityPerUnit, decimal? unitPrice,
+                       short? unitsInStock, short? unitsOnOrder,
+                       short? reorderLevel, bool discontinued)
         {
             ProductID = productID;
             ProductName = productName;
@@ -126,18 +126,18 @@ namespace NorthwindEntities
 
 ### Part 2 – The Abstract Data Provider
 
-The data access layer of our application will be responsible for communicating with the database and passing data to and from our application. As part of the DAL strategy for our program, we will use Microsoft’s Enterprise Library 5.0\. Details for connecting to the database will be held in the web.config’s <connectionstrings> node. In addition, we will use a base class for our DAL classes that will identify the database and perform common data mapping logic for reading data from the database.
+The data access layer of our application will be responsible for communicating with the database and passing data to and from our application. As part of the DAL strategy for our program, we will use Microsoft's Enterprise Library 5.0\. Details for connecting to the database will be held in the web.config's `<connectionstrings>` node. In addition, we will use a base class for our DAL classes that will identify the database and perform common data mapping logic for reading data from the database.
 
-The base class we will create in this step is named “AbstractDataProvider”. It will be both abstract and internal. It will also make use of generics to support mapping data to the CBOs. (This mapping of data to business entities is sometimes referred to as Hydration.)
+The base class we will create in this step is named "AbstractDataProvider". It will be both abstract and internal. It will also make use of generics to support mapping data to the CBOs. (This mapping of data to business entities is sometimes referred to as Hydration.)
 
-1.  In the web site, open the web.config file and find the <connectionstrings> node. Edit this node to match the following code.
+1. In the web site, open the web.config file and find the `<connectionstrings>` node. Edit this node to match the following code.
 
 ```xml
 <connectionstrings configsource="webConnectionStrings.config" />
 ```
 
-2.  Right-click on the website and select “Add New Item…”. Select “Web Configuration File” and name the file “webConnectionStrings.config”.
-3.  Replace the entire contents of the “webConnectionStrings.config” file to contain the following XML code.
+2. Right-click on the website and select "Add New Item…". Select "Web Configuration File" and name the file "webConnectionStrings.config".
+3. Replace the entire contents of the "webConnectionStrings.config" file to contain the following XML code.
 
 ```xml
 <connectionstrings>
@@ -147,8 +147,8 @@ The base class we will create in this step is named “AbstractDataProvider”. 
 </connectionstrings>
 ```
 
-4.  In the NorthwindSystem project, create a folder called DAL. This will hold the various DAL classes for our system.
-5.  Create a new class in the DAL folder and name it AbstractDataProvider. Make sure it’s defined as both internal and abstract.
+4. In the NorthwindSystem project, create a folder called DAL. This will hold the various DAL classes for our system.
+5. Create a new class in the DAL folder and name it AbstractDataProvider. Make sure it's defined as both internal and abstract.
 
 ```csharp
 namespace NorthwindSystem.DAL
@@ -159,7 +159,7 @@ namespace NorthwindSystem.DAL
 } // end of namespace
 ```
 
-6.  Import the following namespaces and modify the class name to declare it as a generic type.
+6. Import the following namespaces and modify the class name to declare it as a generic type.
 
 ```csharp
 using System;
@@ -174,7 +174,7 @@ namespace NorthwindSystem.DAL
 } // end of namespace
 ```
 
-7.  In the AbstractDataProvider class, add a constant to hold the name of the connection string setting in the web.config file. Also add a property to represent the database. Create a constructor that initializes the property with the settings pulled from the configuration file.
+7. In the AbstractDataProvider class, add a constant to hold the name of the connection string setting in the web.config file. Also add a property to represent the database. Create a constructor that initializes the property with the settings pulled from the configuration file.
 
 ```csharp
 #region Properties, Fields and Constants
@@ -189,13 +189,13 @@ public AbstractDataProvider()
 #endregion
 ```
 
-8.  Add an abstract method for mapping the database data to the business entities. This method will be overridden in later classes to provide the specific logic for mapping data from individual tables.
+8. Add an abstract method for mapping the database data to the business entities. This method will be overridden in later classes to provide the specific logic for mapping data from individual tables.
 
 ```csharp
     protected abstract T Hydrate(IDataReader dataReader);
 ```
 
-9.  Add a method for creating a single CBO. This method will be responsible for validating the data reader (making sure it is not null) and ensuring that it is properly closed (disposed of). The details of extracting the data and hydrating the business entity will be dealt with by the Hydrate() method.
+9. Add a method for creating a single CBO. This method will be responsible for validating the data reader (making sure it is not null) and ensuring that it is properly closed (disposed of). The details of extracting the data and hydrating the business entity will be dealt with by the Hydrate() method.
 
 ```csharp
 protected T FillObject(IDataReader reader)
@@ -214,7 +214,7 @@ protected T FillObject(IDataReader reader)
 }
 ```
 
-10.  Add a method for creating a list of CBOs. This method will validate the data reader and ensure it is properly closed. Once again, the details of hydrating the business entity will be handled by the Hydrate() method.
+10. Add a method for creating a list of CBOs. This method will validate the data reader and ensure it is properly closed. Once again, the details of hydrating the business entity will be handled by the Hydrate() method.
 
 ```csharp
 protected List<t> FillList(IDataReader reader)
@@ -240,8 +240,8 @@ protected List<t> FillList(IDataReader reader)
 
 One of the big issues surrounding Data Access Layer code is the question of how to deal with translating null values from the database into our custom business objects. A number of strategies have been proposed in the past, but with the presence of Extension Methods since C# 3.0 and Generics , there is a quick and light-weight solution: Add new methods to the IDataReader interface.
 
-1.  Create a new folder inside of the DAL folder of the NorthwindSystem project. Give it the name “Extensions”.
-2.  Right-click on the Extensions folder and select AddClass… . Name the class “DataReaderExtensions”. Then, modify the code to match the following.
+1. Create a new folder inside of the DAL folder of the NorthwindSystem project. Give it the name "Extensions".
+2. Right-click on the Extensions folder and select AddClass… . Name the class "DataReaderExtensions". Then, modify the code to match the following.
 
 ```csharp
 using System;
@@ -275,7 +275,7 @@ These two methods (`GetValue<T>` and `IsDBNull`) will be used extensively in the
 
 This part of the tutorial focuses on creating the initial DAL classes for each table in the database.
 
-1.  Create new class in the DAL folder of the NorthwindSystem project. Give it the name CategoryProvider. Import the System.Collections.Generic, System.Data, and NortwindEntities namespaces, as these will be needed in our class.
+1. Create new class in the DAL folder of the NorthwindSystem project. Give it the name CategoryProvider. Import the System.Collections.Generic, System.Data, and NortwindEntities namespaces, as these will be needed in our class.
 
 ```csharp
 using System;
@@ -290,7 +290,7 @@ namespace NorthwindSystem.DAL
 }
 ```
 
-2.  Ensure that CategoryProvider inherits from the AbstractDataProvider and that it specifies the Category class as the specific type that will be mapped. Because the AbstractDataProvider is declared as internal, the CategoryProvider class must also be declared as internal.
+2. Ensure that CategoryProvider inherits from the AbstractDataProvider and that it specifies the Category class as the specific type that will be mapped. Because the AbstractDataProvider is declared as internal, the CategoryProvider class must also be declared as internal.
 
 ```csharp
 using System;
@@ -305,7 +305,7 @@ namespace NorthwindSystem.DAL
 }
 ```
 
-3.  Write a method in the CategoryProvider class to implement the abstract Hydrate() method from the base class. This method is concerned with mapping a single row of data from the Categories table to the Category CBO class.
+3. Write a method in the CategoryProvider class to implement the abstract Hydrate() method from the base class. This method is concerned with mapping a single row of data from the Categories table to the Category CBO class.
 
 ```csharp
     protected override Category Hydrate(IDataReader reader)
@@ -313,7 +313,7 @@ namespace NorthwindSystem.DAL
     }
 ```
 
-4.  Create an instance of the Category class; then extract data from the data reader into each property of the new Category object. We will use our extension methods to handle both the null values (of the Description and Picture columns) and the data conversions when translating values from the database into our C#-specific data types. Also, notice that the Picture column of the table (whose data type is Image) is being represented as an array of bytes in the Category class. At the end of the method, return the hydrated Category object.
+4. Create an instance of the Category class; then extract data from the data reader into each property of the new Category object. We will use our extension methods to handle both the null values (of the Description and Picture columns) and the data conversions when translating values from the database into our C#-specific data types. Also, notice that the Picture column of the table (whose data type is Image) is being represented as an array of bytes in the Category class. At the end of the method, return the hydrated Category object.
 
 ```csharp
     protected override Category Hydrate(IDataReader reader)
@@ -327,7 +327,7 @@ namespace NorthwindSystem.DAL
     }
 ```
 
-5.  Repeat the above steps for the Product class and Products table. Notice that for the nullable columns in the data reader, a nullable type is used in the generic extension method, GetValue(), for data types that map to C# value types.
+5. Repeat the above steps for the Product class and Products table. Notice that for the nullable columns in the data reader, a nullable type is used in the generic extension method, GetValue(), for data types that map to C# value types.
 
 ```csharp
 using System;
@@ -361,13 +361,13 @@ namespace NorthwindSystem.DAL
 
 ### On Your Own
 
-Try creating your own classes to map data from the Suppliers table into your application. Create a CBO class called “Supplier” and a DAL class called “SupplierProvider” using the patterns and techniques shown above.
+Try creating your own classes to map data from the Suppliers table into your application. Create a CBO class called "Supplier" and a DAL class called "SupplierProvider" using the patterns and techniques shown above.
 
-Also, for the Supplier CBO, add some read-only properties to “break apart” the HomePage information. The HomePage data of the Suppliers table stores up to four pieces of information, separated by the hash or pound symbol (#), in the following format:
+Also, for the Supplier CBO, add some read-only properties to "break apart" the HomePage information. The HomePage data of the Suppliers table stores up to four pieces of information, separated by the hash or pound symbol (#), in the following format:
 
 `displayText#address#subAddress#screentip`
 
-Hint: Use the string’s .Split() method to break the HomePage into it’s parts.E.g.:
+Hint: Use the string's `.Split()` method to break the HomePage into it's parts.E.g.:
 
 ```csharp
     public string DisplayText
@@ -396,31 +396,31 @@ At the foundation of the mapping strategy is a single abstract class acting as t
 
 The following questions are designed to help you review key aspects of this tutorial.
 
-1.  What is meant by the term “hydrate”?
-2.  Why are database null values somewhat problematic in computer programs?
-3.  What is the role of the <connectionstrings> node in the web.config file?
+1. What is meant by the term "hydrate"?
+2. Why are database null values somewhat problematic in computer programs?
+3. What is the role of the `<connectionstrings>` node in the web.config file?
 
 #### Creating Custom Business Objects
 
-*   POCO – Plain Old CLR Objects vs Rich Business Objects
-*   Choosing a starting point
-    *   Database Driven Design
-    *   Behaviour Driven Design
+* POCO – Plain Old CLR Objects vs Rich Business Objects
+* Choosing a starting point
+  * Database Driven Design
+  * Behaviour Driven Design
 
 #### Mapping CBO to Database Tables
 
 In this tutorial, we designed our Custom Business Objects based upon the Database Tables, and coded the DAL provider classes to map to columns that have the same name as the database tables. In truth, the mapping that happens in the DAL provider classes is going to be heavily dependent on the stored procedures (SProcs) in the database. In other words, this mapping will only work if the stored procedures for reading from the database use the following pattern. Stored procedures for SELECT-ing rows must:
 
-*   Return all (and only) the columns for a single database table
-*   Use column names (headings) that are identical to the column names on the database table
+* Return all (and only) the columns for a single database table
+* Use column names (headings) that are identical to the column names on the database table
 
-Any variation from this pattern will require customizations to provider class’ the Hydrate and FillObject/FillList methods.
+Any variation from this pattern will require customizations to provider class' the Hydrate and FillObject/FillList methods.
 
 #### The Problem of Database Nulls
 
 Note that many of the columns in the database table allow null values. Our business entities must also support null values for their corresponding properties. With string data, this is not an issue because a string (as a reference type) can be assigned a null value. However, primitive types such as numbers and dates are value types in C# (and VB.NET); by definition, value types on their own cannot have a null value.
 
-In .NET 2.0, however, a class named Nullable<t> was introduced to act as a “wrapper” for value types that would allow null values. Thus, it is possible to declare a variable as a nullable integer with the following code.
+In .NET 2.0, however, a class named `Nullable<t>` was introduced to act as a "wrapper" for value types that would allow null values. Thus, it is possible to declare a variable as a nullable integer with the following code.
 
 ```csharp
     Nullable<int> age;

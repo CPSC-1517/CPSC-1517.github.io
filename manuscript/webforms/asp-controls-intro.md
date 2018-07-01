@@ -1,25 +1,26 @@
-﻿# Programming with ASP.NET Controls
+﻿---
+title: Programming with ASP.NET Controls
+---
+# Programming with ASP.NET Controls
 
-<dl>
-  <dt>What is Code-Behind?</dt>
-  <dd>A class (regular OOP); Is inherited by the ASPX page; Programmers write code to respond to page and control events</dd>
+What is Code-Behind?
+  ~ A class (regular OOP); Is inherited by the ASPX page; Programmers write code to respond to page and control events
 
-  <dt>Event Handler</dt>
-  <dd>A method on the page’s code-behind class that runs when the event occurs; Is called in response to the event; default event's handler is created by double-clicking the GUI control</dd>
+Event Handler
+  ~ A method on the page's code-behind class that runs when the event occurs; Is called in response to the event; default event's handler is created by double-clicking the GUI control
 
-  <dt>Page_Load</dt>
-  <dd>Use for one-time setup of control values; Check for Page.IsPostback; Set control’s initial property values</dd>
+Page_Load
+  ~ Use for one-time setup of control values; Check for Page.IsPostback; Set control's initial property values
 
-  <dt>Button_Click</dt>
-  <dd>Respond to user clicking Button/LinkButton</dd>
-</dl>
+Button_Click
+  ~ Respond to user clicking Button/LinkButton
 
 * Each ASP.NET control
   * Has an (ID) - Programmatic name of the control
   * Is an object
     * Properties & Methods
     * Inherits from System.Web.UI.Control
-      * “Defines the properties, methods, and events that are shared by all ASP.NET server controls”
+      * "Defines the properties, methods, and events that are shared by all ASP.NET server controls"
       * Has unique Properties & Methods
 
 | Control Type    | Property |
@@ -36,7 +37,7 @@
 * Create Event Handler Method
   * Page_Load - Double-click blank part of GUI Page
   * Button_Click - Double-click button
-* Write Code in Event Handler’s Body
+* Write Code in Event Handler's Body
   * Anything you want (within reason)
     * Get/Set Control Properties
     * Call Methods of Controls
@@ -46,13 +47,11 @@
 
 ----
 
-{% assign placeholder1 = "{%1}" %}
-
 Open the demos in Visual Studio and examine the code in the code-behind files.
 
-* What is the syntax of an If statement?
+* What is the syntax of an If Statement?
 * What is the this keyword in C#?
-* What is the syntax for declaring and initializing a variable in C#? What’s the syntax for comments?
+* What is the syntax for declaring and initializing a variable in C#? What's the syntax for comments?
 * List the primitive data types used for variables in the code samples.
 * The following lines of code are used to replace specific text from one string with some other text. What is used as the placeholder text in the original string?
 
@@ -77,24 +76,22 @@ Open the demos in Visual Studio and examine the code in the code-behind files.
 Research the controls in the following chart. Then, complete the chart by placing a checkmark for each property that exists for that control.
 
 | Properties / Controls | Label | TextBox | Button | CheckBox | RadioButton | DropDownList |
-| .Text                 |                 |        |          |             |              |
-
-
-| .Text | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| .Font | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| .Checked | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| .Selected | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| .Enabled | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| .Visible | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| .ReadOnly | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| --------------------- | ----- | ------- | ------ | -------- | ----------- | ------------ |
+| .Text |  |  |  |  |  |  |
+| .Font |  |  |  |  |  |  |
+| .Checked |  |  |  |  |  |  |
+| .Selected |  |  |  |  |  |  |
+| .Enabled |  |  |  |  |  |  |
+| .Visible |  |  |  |  |  |  |
+| .ReadOnly |  |  |  |  |  |  |
 
 ----
 
 Calculator Tutorial
-![](calculator-tutorial.png)
+![Calculator](./calculator-tutorial.png)
 
 * Write out the syntax for declaring a class.
-* What is the purpose of the “partial” keyword?
+* What is the purpose of the `partial` keyword?
 * What is the difference between a subroutine and a function?
 * What is the syntax for writing a method of a class?
 * What is the syntax for a Subroutine?
@@ -103,8 +100,7 @@ Calculator Tutorial
 * Explain, in general terms, the purpose and functionality of inheritance.
 * What is the syntax for indicating inheritance in C#?
 * List the names of methods, fields and properties that a web form inherits from System.Web.UI.Page.
-* Explain why it’s a bad idea to give a control on a form an (ID) that matches a method, field or property inherited from System.Web.UI.Page.
-
+* Explain why it's a bad idea to give a control on a form an (ID) that matches a method, field or property inherited from System.Web.UI.Page.
 
 Review the learning outcomes for this topic by answering the following questions.
 
@@ -116,4 +112,3 @@ Review the learning outcomes for this topic by answering the following questions
   * TextBox, Label, CheckBox, DropDownList, RadioButtonList, Image, Calendar
 * List important properties common to all/most ASP.NET controls.
 * Which property of an ASP.Net control is used to programmatically access the control?
-

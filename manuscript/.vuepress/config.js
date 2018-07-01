@@ -2,14 +2,23 @@ module.exports = {
     title: 'CPSC-1517 Student Notes',
     description: 'Introduction to Application Development',
     dest: 'docs',
+    markdown: {
+        config: md => {
+            md.set({ breaks: true })
+            md.use(require('markdown-it-imsize'))
+            md.use(require('markdown-it-mermaid').default) // leave default options
+            md.use(require('markdown-it-checkbox'))
+            md.use(require('markdown-it-deflist'))
+        }
+    },
     themeConfig: {
         nav: [
             { text: 'Home', link: '/about/' },
             { text: 'C-Sharp', link: '/csharp/' },
             { text: 'Html', link: '/html/' },
             { text: 'Razor', link: '/razor/' },
+            { text: 'Client-Server', link: '/clientserver/' },
             { text: 'Webforms', link: '/webforms/' },
-            { text: 'Lab', link: '/lab/' },
             { text: 'LOGs', link: '/logs/' },
             { text: 'Issues/Bugs', link: 'https://github.com/CPSC-1517/CPSC-1517-StudentNotes/issues/new' },
             { text: 'Moodle', link: 'https://moodle.nait.ca' },
@@ -40,10 +49,24 @@ module.exports = {
                 'extras'
             ],
 
+            '/clientserver/': [
+                '',
+                'tutorial-1-visualstudio'
+            ],
+
             '/webforms/': [
                 '',
                 '01-overview',
-                '02-servercontrols'
+                '02-servercontrols',
+                'asp-controls-intro',
+                'tutorial-2-maptodb',
+                // 'tutorial-3-display',
+                // 'tutorial-4-insert',
+                // 'tutorial-5-updatedelete',
+                // 'tutorial-6-gridview',
+                // 'tutorial-7-databound',
+                // 'tutorial-8-databound',
+                // 'tutorial-9-databoundedit'
             ],
 
             '/logs/': [

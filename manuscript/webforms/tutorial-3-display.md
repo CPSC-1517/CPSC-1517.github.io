@@ -1,9 +1,15 @@
-﻿# Displaying Data (Beta) - Part 3 of 9
+﻿---
+title: Displaying Data
+---
+# Displaying Data (Beta) - Part 3 of 9
+
+:::warning OBSOLETE
+The content in this demo is obsolete. Use the Entity Framework library as demonstrated in class.
+:::
 
 This series of hands-on tutorials are designed to demonstrate how to build a web application that uses a Client-Server architecture and that persists information in a database. Each tutorial will walk the reader through steps to build upon a specific web application scenario based upon the Northwind Traders database.
 
 There are nine tutorials in this package. Each hands-on tutorial has a Starter Kit folder with all of the required material to begin the tutorial and a Solution folder with the final product of the tutorial.
-
 
 ## Displaying Data (Beta)
 
@@ -36,7 +42,7 @@ For this lab, you will need the Visual Studio solution and database from the pre
 
 This step focuses on creating the DAL and BLL for database read operations. Each DAL class will initially have two read methods: one for looking up a single item and another for getting a list of items. The BLL class, which acts as the public access point to the system, will provide accompanying methods for calling the two DAL methods.
 
-1.  In the DAL folder of the NorthwindSystem project, open the CategoryProvider.cs file and add the following methods to read data from the database. You will need to make sure that the System.Collections.Generic namespace is imported in order to return a List<Category> from the List() method.
+1.  In the DAL folder of the NorthwindSystem project, open the CategoryProvider.cs file and add the following methods to read data from the database. You will need to make sure that the System.Collections.Generic namespace is imported in order to return a `List<Category>` from the List() method.
 
 ```csharp
     public Category Lookup(int CategoryID)
