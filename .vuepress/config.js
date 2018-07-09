@@ -1,7 +1,6 @@
 module.exports = {
     title: 'CPSC-1517 Student Notes',
     description: 'Introduction to Application Development',
-    dest: 'docs',
     markdown: {
         config: md => {
             md.set({ breaks: true })
