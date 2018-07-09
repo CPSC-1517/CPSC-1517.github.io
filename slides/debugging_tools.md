@@ -7,10 +7,10 @@
 - Describe the role of debugging tools in software development
   - [Debugging tools help the developer in finding and fixing run-time logical errors in an application]
 - Explain how to use breakpoints to pause program execution at a specific location of code
-- Explain what is meant by the phrase “yellow screen of death”
+- Explain what is meant by the phrase "yellow screen of death"
 - List common types of run-time errors
 - Identify how to edit the configuration file (web.config) to enable or disable debugging
-- Describe the difference between “Step Into”, “Step Over” and “Step Out” in the debugger
+- Describe the difference between "Step Into", "Step Over" and "Step Out" in the debugger
 
 
 ## (Ability)
@@ -27,9 +27,9 @@
 
 - If "it doesn't work", then it's *your* fault
   - It might just be a typo
-  - If it’s not a typo, then it might be something you don’t fully understand…
+  - If it's not a typo, then it might be something you don't fully understand…
 
-This isn’t a “put-down” – it’s just a statement.
+This isn't a "put-down" – it's just a statement.
 Expect to learn about stuff you think you already know.
 
 ---
@@ -49,9 +49,9 @@ Expect to learn about stuff you think you already know.
   - Not sending the arguments in the order required by the parameter list
 - Constructor Routing Errors
   - Constructor not routing values through the Set properties, when present
-  - Spelling error on parameter variable causes “do-nothing” value assignment in constructor’s body
+  - Spelling error on parameter variable causes "do-nothing" value assignment in constructor's body
 - Null Object Reference
-  - An attempt to use a property or method on an object that doesn’t exist
+  - An attempt to use a property or method on an object that doesn't exist
 - Looping Logic Errors
   - Looping too many times
   - Looping too few times
