@@ -95,6 +95,10 @@ module.exports = {
                 'ef6-intro'
             ],
 
+            '/Instructor/': [
+                ''
+            ],
+
             // fallback
             '/about/': [
                 '',
