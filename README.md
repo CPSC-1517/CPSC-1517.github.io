@@ -11,7 +11,7 @@ features:
 - title: Attend Class
   details: This site contains numerous examples and information that is available primarily in-class. Material presented in this site is subject to change during the course of the term. Therefore, it is imperitive that you, as a student, attend classes and take notes from information given in class.
 - title: Reporting Bugs
-  details: Report bugs/errors at the issue tracker link. When reporting errors, please identify **the complete URL of the page** and **quote the portion of the page that has the error**.
+  details: Report bugs/errors at the issue tracker link. When reporting errors, please identify the complete URL of the page and quote the portion of the page that has the error.
 footer: Copyright © 2018-present Digital Media and IT - NAIT
 ---
 # CPSC-1517 Student Notes
@@ -33,4 +33,4 @@ This site contains numerous examples and information that is available primarily
 
 ### Reporting Bugs
 
-Report bugs/errors at this [issue tracker](https://github.com/CPSC-1517/CPSC-1517-StudentNotes/issues/new). When reporting errors, please identify **the complete URL of the page** and **quote the portion of the page that has the error**.
+Report bugs/errors at this [issue tracker](https://github.com/CPSC-1517/CPSC-1517.github.io/issues/new). When reporting errors, please identify **the complete URL of the page** and **quote the portion of the page that has the error**.
