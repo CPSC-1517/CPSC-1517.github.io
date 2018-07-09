@@ -10,7 +10,6 @@ description: Learning Outcome Guides provide a concise expression of specific kn
 
 The LOGs for this course are divided along major areas of study which may span one or more class periods. These LOGs support the major outcomes of the course, providing additional details and referencing specific tools, technologies and techniques.
 
-
 ## The LOGs for This Course
 
 - [Course Introduction](a-course-intro.md)
@@ -30,7 +29,6 @@ The LOGs for this course are divided along major areas of study which may span o
 - [Programming ASP.NET Controls](asp-controls)
 - [Client-Server Architecture](client-server) - ***TODO***
 - [Entity Framework 6](ef6-intro) - ***TODO***
-
 
 <!-- 
 
