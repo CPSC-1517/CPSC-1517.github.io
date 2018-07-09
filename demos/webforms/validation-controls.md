@@ -1,1 +1,0 @@
-﻿# ASP.NET Validation Controls
