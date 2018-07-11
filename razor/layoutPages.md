@@ -132,10 +132,9 @@ An important part of any website is the site's navigation. It's also a part of t
 </html>
 ```
 
-
 **CSS styles for the menu navigation**
 
-```csharps
+```csharp
 /* Navigation Menu styles */
 nav ul {
     list-style-type: none;
@@ -144,7 +143,7 @@ nav ul {
     overflow: hidden;
     border: 1px solid #e7e7e7;
     background-color: #f3f3f3;
-    
+
     font-size: 1.15em;
 }
 
