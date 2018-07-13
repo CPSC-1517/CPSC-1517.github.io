@@ -19,7 +19,7 @@ description: Razor Validation Helpers
 
 # Showing Images
 
-```charp
+```csharp
 @{
     Page.Title = "Manage Categories";
     Layout = "~/_SiteLayout.cshtml";
