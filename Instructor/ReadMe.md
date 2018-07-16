@@ -7,6 +7,12 @@ title: Lesson Plan Overview
 
 ## Object Review
 
+C# and OOP
+
+- C# Programming 
+- OOP Basics
+- More OOP
+
 - [Lesson Plan 1](review/lesson-1.md)
 - [Lesson Plan 2](review/lesson-2.md)
 - [Lesson Plan 3](review/lesson-3.md)
@@ -42,6 +48,20 @@ ASP.NET Web Pages
 
 ## Razor Forms Using CRUD
 
+ASP.NET Web Pages
+
+- Entering Database Data By Using Forms and Razor
+- Updating Database Data using Razor
+- Deleting Database Data using Razor
+- Using Java Script for Confirmation
+
+- [Lesson Plan 1](razorCrud/lesson-1.md)
+- [Lesson Plan 2](razorCrud/lesson-2.md)
+- [Lesson Plan 3](razorCrud/lesson-3.md)
+- [Lesson Plan 4](razorCrud/lesson-4.md)
+
+## ASP.Net Web Forms
+
 ASP.NET Web Forms
 
 - Introduction
@@ -56,39 +76,39 @@ ASP.NET Web Forms
 - [Lesson Plan 4](webForms/lesson-4.md)
 - [Lesson Plan 5](webForms/lesson-5.md)
 
-## ASP.Net Web Forms
+## Client Server
 
-- [Lesson Plan 1](review/lesson-1.md)
-- [Lesson Plan 2](review/lesson-2.md)
-- [Lesson Plan 3](review/lesson-3.md)
-- [Lesson Plan 4](review/lesson-4.md)
+ASP.NET Web Pages
 
-## Object Review
+- Overview of Client Server
+- Entity Framework for database handling
+- Logical and Physical construction of a Client/Server website
+- Display basics of database information
 
-- [Lesson Plan 1](review/lesson-1.md)
-- [Lesson Plan 2](review/lesson-2.md)
-- [Lesson Plan 3](review/lesson-3.md)
-- [Lesson Plan 4](review/lesson-4.md)
+- [Lesson Plan 1](clientServer/lesson-1.md)
+- [Lesson Plan 2](clientServer/lesson-2.md)
 
-## Object Review
+## Client Server CRUD
 
-- [Lesson Plan 1](review/lesson-1.md)
-- [Lesson Plan 2](review/lesson-2.md)
-- [Lesson Plan 3](review/lesson-3.md)
-- [Lesson Plan 4](review/lesson-4.md)
+ASP.NET Web Forms
 
-## Object Review
+- Using basic form Validation
+- CRUD Maintenance using ASP.Net
 
-- [Lesson Plan 1](review/lesson-1.md)
-- [Lesson Plan 2](review/lesson-2.md)
-- [Lesson Plan 3](review/lesson-3.md)
-- [Lesson Plan 4](review/lesson-4.md)
+- [Lesson Plan 1](clientServerCrud/lesson-1.md)
+- [Lesson Plan 2](clientServerCrud/lesson-2.md)
 
-## Object Review
+## ASP.Net Web Pages: Multiple Record Queries
 
-- [Lesson Plan 1](review/lesson-1.md)
-- [Lesson Plan 2](review/lesson-2.md)
-- [Lesson Plan 3](review/lesson-3.md)
-- [Lesson Plan 4](review/lesson-4.md)
+ASP.NET Web Forms
+
+- Customizing the Gridview
+- Multiple Record Query Processing using Code-Behind
+- Multiple Record Query Processing using ObjectDataSource
+
+- [Lesson Plan 1](webFormsGridView/lesson-1.md)
+- [Lesson Plan 2](webFormsGridView/lesson-2.md)
+- [Lesson Plan 3](webFormsGridView/lesson-3.md)
+
 
 

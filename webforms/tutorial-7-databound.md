@@ -317,7 +317,7 @@ Hooking Up the DropDownList
 
 3)	Click the smart tag for the CategoryDataSource and select “Configure Data Source”. This will open a wizard control that will simplify hooking up this control to the Business Logic Layer of our application.
 
-4)	In the “Choose a Business Object” page of the wizard, make sure the “Show only data components” check box is selected. Choose the NorthwindSystem.BLL.CategoryController class as the Business Object that will supply data for this control.  Then click “Next”.
+4)	In the “Choose a Business Object” page of the wizard, make sure the “Show only data components” check box is selected. Choose the NorthwindSystem.BLL.CategoryController class as the Business Object that will supply data for this control. Then click “Next”.
 
 5)	In the “Define Data Methods” page of the wizard, select the ListAllCategories() method as the SELECT method for the control. Then click “Finish”.
 
@@ -407,13 +407,13 @@ This part of the tutorial walks through the steps to create a form that will loo
 2)	Add an ObjectDataSource control to the form. Give it an ID of ProductDataSource.
 
 3)	Click the smart tag for the ProductDataSource and select “Configure Data Source”. This will open a wizard control that will simplify hooking up this control to the Business Logic Layer of our application.
-4)	In the “Choose a Business Object” page of the wizard, make sure the “Show only data components” check box is selected. Choose the NorthwindSystem.BLL.ProductController class as the Business Object that will supply data for this control.  Then click “Next”.
+4)	In the “Choose a Business Object” page of the wizard, make sure the “Show only data components” check box is selected. Choose the NorthwindSystem.BLL.ProductController class as the Business Object that will supply data for this control. Then click “Next”.
 
 5)	In the “Define Data Methods” page of the wizard, select the LookupProductsByName() method as the SELECT method for the control. Then click “Next”.
 
 6)	In the “Define Parameters” page of the wizard, we must identify the PartialProductName TextBox as the control that supplies the value for the partialName parameter of the LookupProductsByName() method. Click “Finish”.
 
-7)	Add a GridView control and give it the ID “FoundProducts”. Click the GridView’s smart tag and select the ProductDataSource in the Choose Data Source drop-down.  The GridView will use that ObjectDataSource control to create columns for each property of the Product class.
+7)	Add a GridView control and give it the ID “FoundProducts”. Click the GridView’s smart tag and select the ProductDataSource in the Choose Data Source drop-down. The GridView will use that ObjectDataSource control to create columns for each property of the Product class.
 
 8)	In the GridView’s smart tag click “Edit Columns…”. Modify the columns to modify headings and display only the columns shown in the screen shot.
 
@@ -468,7 +468,7 @@ This part of the tutorial walks through the steps to create a form that will loo
 form
 2)	Add two ObjectDataSource controls to the form. Give them the IDs of ProductDataSource and SupplierDataSource.
 Form
-3)	Configure the SupplierDataSource to use the NorthwindSystem.BLL.SupplierController class as the Business Object that will supply data for this control.  Then click “Next”.
+3)	Configure the SupplierDataSource to use the NorthwindSystem.BLL.SupplierController class as the Business Object that will supply data for this control. Then click “Next”.
 wizard
 4)	In the “Define Data Methods” page of the wizard, select the ListAllSuppliers() method as the SELECT method for the control. Then click “Finish”.
 wizard
@@ -476,7 +476,7 @@ This part of the tutorial walks through the steps to create a form that will loo
 dialog/smart tag
 6)	In the smart tag of the ??? GridView, check on the Enable Select checkbox.
 Smart tag
-7)	Configure the ProductDataSource to use the NorthwindSystem.BLL.ProductController class as the Business Object that will supply data for this control.  Then click “Next”.
+7)	Configure the ProductDataSource to use the NorthwindSystem.BLL.ProductController class as the Business Object that will supply data for this control. Then click “Next”.
 wizard
 8)	In the “Define Data Methods” page of the wizard, select the LookupBySupplier() method as the SELECT method for the control. On the next page, set the ??? GridView as the control which identifies which supplier the user has selected.
 wizard

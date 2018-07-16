@@ -39,20 +39,20 @@ Lesson 3: ASP.Net Web basic controls.
 
 **Concepts:**
 
-1.  Review the .master, .aspx web page, and .aspx.cs code-behind file
+1. Review the .master, .aspx web page, and .aspx.cs code-behind file
     relationship.
 
-2.  ASP.Net controls
+2. ASP.Net controls
 
     -   RadioButtonList instead of radio button group
 
     -   Using properties for setting up controls
 
-3.  What is the difference between processing in of the Razor/Form webpage and
+3. What is the difference between processing in of the Razor/Form webpage and
     an .aspx webpage. Draw attention to the fact the \<form\> tag is on the
     .master file. The whole page is a form.
 
-4.  Page_Load event is always executed before the onclick event which caused the
+4. Page_Load event is always executed before the onclick event which caused the
     postback.
 
 **Discuss ASP.Net vs Razor/Form processing.**

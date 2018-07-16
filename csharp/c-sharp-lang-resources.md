@@ -6,7 +6,7 @@ description: Additional resources for learning C#
 
 The C# programming language is one of the built-in languages for developing applications in Visual Studio. The following links to **MSDN** Library articles introduce various aspects of the language itself.
 
-Review these articles in preparation for the first quiz on Language Fundamentals.  
+Review these articles in preparation for the first quiz on Language Fundamentals. 
 _**<span style="color: #993300;">Note:</span>** While many of these articles have actual hands-on exercises, you don't have to do the actual exercise if you already feel comfortable with the article's topic._
 
 ::: warning Note:

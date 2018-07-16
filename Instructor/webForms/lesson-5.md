@@ -44,9 +44,9 @@ Lesson 5: ASP.Net Web pages form validation.
 
 **Concepts:**
 
-1.  Review basic validation.
+1. Review basic validation.
 
-2.  Data Retention
+2. Data Retention
 
     -   Browser (ViewState and cookies (session and permanent))
 
@@ -55,7 +55,7 @@ Lesson 5: ASP.Net Web pages form validation.
     -   Database (permanent) (this will be covered in detail in the Client
         Server modules)
 
-3.  GridView (multi-record display, defaults only).  
+3. GridView (multi-record display, defaults only). 
     
 
 **Contest Validation Form**

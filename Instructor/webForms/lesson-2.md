@@ -34,10 +34,10 @@ Lesson 2: ASP.Net Web pages and menus.
 
 **Concepts:**
 
-1.  What is the similarities between RenderSection in the Razor/Form webpage and
+1. What is the similarities between RenderSection in the Razor/Form webpage and
     an .aspx webpage ContentPlaceholder (asp:Content).
 
-2.  Setting up a menu file
+2. Setting up a menu file
 
     -   .sitemap
 

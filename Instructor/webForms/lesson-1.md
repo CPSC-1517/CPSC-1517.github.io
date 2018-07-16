@@ -35,11 +35,11 @@ Lesson 1: Introduction to ASP.Net Web pages.
 
 **Concepts:**
 
-1.  What is ASP. Net.
+1. What is ASP. Net.
 
-2.  Basic internet trip is unchanged.
+2. Basic internet trip is unchanged.
 
-3.  Razor and Forms vs ASP.Net
+3. Razor and Forms vs ASP.Net
 
     -   Structure Layout/ViewPage similar to Master/Content
 

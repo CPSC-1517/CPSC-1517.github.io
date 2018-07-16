@@ -38,11 +38,11 @@ Lesson 4: ASP.Net Web pages formatting and CheckBoxList.
 
 **Concepts:**
 
-1.  Accessing basic controls (complete events for Basic Control page)
+1. Accessing basic controls (complete events for Basic Control page)
 
-2.  Review the use of Bootstrap formatting.
+2. Review the use of Bootstrap formatting.
 
-3.  Bootwarp NuGet package
+3. Bootwarp NuGet package
 
     -   Created by Dan Gilleland
 
@@ -52,7 +52,7 @@ Lesson 4: ASP.Net Web pages formatting and CheckBoxList.
 
     -   Is a NuGet package
 
-4.  CheckBoxList and its processing.
+4. CheckBoxList and its processing.
 
 **Coding: SubmitButtonChoice_Click**
 

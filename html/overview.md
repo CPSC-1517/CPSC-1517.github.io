@@ -12,7 +12,7 @@ HTML, CSS and JavaScript are the languages of the World Wide Web. They are the s
 
 ## Versions of HTML
 
-HTML has a long history going back to the 1990s. The first version was simply called "HTML", and later versions were given increasing numbers after the name. In the first decade of this century, HTML was at version 4, and browsers were finally becoming more consistent about how they rendered HTML markup.  With the rise of XML (eXtensible Markup Language) in the late 90's, efforts were underway to add more "structure" to HTML by specifying a new standard called XHTML. Browsers, however, needed to keep backwards compatibility for all the existing websites, and while XHTML standards were supported, it was not successful in replacing ordinary HTML.
+HTML has a long history going back to the 1990s. The first version was simply called "HTML", and later versions were given increasing numbers after the name. In the first decade of this century, HTML was at version 4, and browsers were finally becoming more consistent about how they rendered HTML markup. With the rise of XML (eXtensible Markup Language) in the late 90's, efforts were underway to add more "structure" to HTML by specifying a new standard called XHTML. Browsers, however, needed to keep backwards compatibility for all the existing websites, and while XHTML standards were supported, it was not successful in replacing ordinary HTML.
 
 As time went on and efforts continued to further develop HTML, a new specification was begun in 2007 for version 5 which offered many hopes and promises for significant improvements. Browser vendors slowly began supporting aspects of the new version, and in 2014 the W3C ratified and published the HTML5 specifications.
 

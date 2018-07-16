@@ -76,7 +76,7 @@ Gotcha!
 If you find the Design view doesn’t save your changes to the UpdateParameters, InsertParameters, or DeleteParameters collections, it might be because the ObjectDataSource needs to be “refreshed”. Click the “Refresh Schema” link on the ObjectDataSource’s smart tag. Then, when you modify the parameter collections, the designer will actually make the changes in the page’s markup.
 
 Also Remember: If you are prompted to also refresh any DataBound controls (GridViews or FormViews), click “No”.
-14)	For the ProductDataSource, click the ellipsis for the DeleteParameters property. Add parameters for each Product property that can be null (same as for the UpdateParameters above). Then click OK.  Setting the UpdateParameters, DeleteParameters, and/or the InsertParameters will produce the following markup inside the ObjectDataSource.
+14)	For the ProductDataSource, click the ellipsis for the DeleteParameters property. Add parameters for each Product property that can be null (same as for the UpdateParameters above). Then click OK. Setting the UpdateParameters, DeleteParameters, and/or the InsertParameters will produce the following markup inside the ObjectDataSource.
 &lt;UpdateParameters&gt;
     &lt;asp:Parameter Name="CategoryId" Type="Int32" ConvertEmptyStringToNull="true" /&gt;
     &lt;asp:Parameter Name="SupplierId" Type="Int32" ConvertEmptyStringToNull="true" /&gt;

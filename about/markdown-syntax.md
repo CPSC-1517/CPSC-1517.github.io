@@ -45,9 +45,9 @@ end
 
 ##### [](#header-5)Header 5
 
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
+1. This is an ordered list following a header.
+2. This is an ordered list following a header.
+3. This is an ordered list following a header.
 
 ###### [](#header-6)Header 6
 
@@ -71,10 +71,10 @@ end
 
 ### And an ordered list:
 
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
+1. Item one
+1. Item two
+1. Item three
+1. Item four
 
 ### And a nested list:
 
