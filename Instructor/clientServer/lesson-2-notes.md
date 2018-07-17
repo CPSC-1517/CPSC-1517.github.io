@@ -1,3 +1,6 @@
+---
+sidebar: auto
+---
 # EntityFramework: Data Access
 
 When ASP.Net first started, users used ADO.Net to access the database. This required mounts of work, redundant setup work. As time went on, as usual, 3rd party individuals attempted to reduce the amount of work needed to access the database using ADO.Net. One popular library was Enterprise Library. This reduce the redundant tedious work of using ADO.net directly. In about 2008, Microsoft introduce EntityFramework to assist developers with database access. ADO.Net was even further removed from developer (hidden). EntityFramework is a set of classes that manage your database access. One links into EntityFramework via inheriting its DBContext class. Using the `DBSet<T>` of this context class (where `<T>` is an entity definition class) and properly annotated entity definition class, database CRUD management has been greatly simplified. **In this course, the entity definition classes will be coded manually by the student so they can get a better understanding of the components needed by EnityFramework. Do not reverse engineer the entities. This will be covered in DMIT2018.**
