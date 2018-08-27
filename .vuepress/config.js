@@ -17,6 +17,10 @@ module.exports = {
               }
     },
     themeConfig: {
+        algolia: {
+            apiKey: '3d872b062b56e395ae2f979ace6f966e',
+            indexName: 'NKW1RXMO3J'
+          },
         nav: [
             { text: 'Home', link: '/about/' },
             { text: 'LOGs', link: '/logs/' },
