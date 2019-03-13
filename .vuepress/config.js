@@ -29,7 +29,7 @@ module.exports = {
             { text: 'Razor', link: '/razor/' },
             { text: 'Client-Server', link: '/clientserver/' },
             { text: 'Webforms', link: '/webforms/' },
-            // { text: 'Lab Specs', link: 'https://cpsc-1517.github.io/LabSpecs/' },
+            { text: 'Lab Specs', link: 'https://cpsc-1517.github.io/LabSpecs/' },
             { text: 'Issues/Bugs', link: 'https://github.com/CPSC-1517/CPSC-1517.github.io/issues/new' },
             { text: 'Moodle', link: 'https://moodle.nait.ca' },
         ],
