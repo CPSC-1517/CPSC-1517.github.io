@@ -6,8 +6,8 @@ heroImage: CPSC-1517.png
 actionText: Get Started →
 actionLink: /about/
 features:
-- title: Draft Content
-  details: At present, it does NOT represent official course material. Official course material can be found on the Moodle website (https://moodle.nait.ca) for the course.
+- title: Outdated Content
+  details: The content here is for legacy technologies related to the CPSC-1517 course. For current material, see the references noted at the Moodle website (https://moodle.nait.ca) for the course.
 - title: Attend Class
   details: This site contains numerous examples and information that is available primarily in-class. Material presented in this site is subject to change during the course of the term. Therefore, it is imperitive that you, as a student, attend classes and take notes from information given in class.
 - title: Reporting Bugs
@@ -19,7 +19,7 @@ footer: Copyright © 2018-present Digital Media and IT - NAIT
 [![Build Status](https://travis-ci.org/CPSC-1517/CPSC-1517.github.io.svg?branch=dev)](https://travis-ci.org/CPSC-1517/CPSC-1517.github.io)
 
 ::: warning NOTE: Notice of Disclaimer!
-This site is under construction.
+This site contains out-dated material due to changes in underlying technologies used in the current course.
 At present, it does ***NOT*** represent official course material. Official course material can be found on the [Moodle website](https://moodle.nait.ca) for the course.
 :::
 
