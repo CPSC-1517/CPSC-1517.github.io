@@ -2,25 +2,25 @@ module.exports = {
     title: 'CPSC-1517 Student Notes',
     description: 'Introduction to Application Development',
     markdown: {
-        config: md => {
-            md.set({ breaks: true })
-            md.use(require('markdown-it-imsize'))
-            md.use(require('markdown-it-mermaid').default) // leave default options
-            md.use(require('markdown-it-checkbox'))
-            md.use(require('markdown-it-kbd'))
-            md.use(require('markdown-it-deflist'))
-            md.use(require('markdown-it-abbr'))
-            md.use(require('markdown-it-mark'))
-            md.use(require('markdown-it-footnote'))
-            md.use(require('markdown-it-sub'))
-            md.use(require('markdown-it-sup'))
-              }
+        // config: md => {
+        //     md.set({ breaks: true })
+        //     md.use(require('markdown-it-imsize'))
+        //     md.use(require('markdown-it-mermaid').default) // leave default options
+        //     md.use(require('markdown-it-checkbox'))
+        //     md.use(require('markdown-it-kbd'))
+        //     md.use(require('markdown-it-deflist'))
+        //     md.use(require('markdown-it-abbr'))
+        //     md.use(require('markdown-it-mark'))
+        //     md.use(require('markdown-it-footnote'))
+        //     md.use(require('markdown-it-sub'))
+        //     md.use(require('markdown-it-sup'))
+        //       }
     },
     themeConfig: {
-        algolia: {
-            apiKey: '3d872b062b56e395ae2f979ace6f966e',
-            indexName: 'NKW1RXMO3J'
-          },
+        // algolia: {
+        //     apiKey: '3d872b062b56e395ae2f979ace6f966e',
+        //     indexName: 'NKW1RXMO3J'
+        //   },
         nav: [
             { text: 'Home', link: '/about/' },
             { text: 'LOGs', link: '/logs/' },
@@ -28,7 +28,7 @@ module.exports = {
             { text: 'Html', link: '/html/' },
             { text: 'Razor', link: '/razor/' },
             { text: 'Client-Server', link: '/clientserver/' },
-            { text: 'Webforms', link: '/webforms/' },
+//            { text: 'Webforms', link: '/webforms/' },
 //            { text: 'Lab Specs', link: 'https://cpsc-1517.github.io/LabSpecs/' },
             { text: 'Issues/Bugs', link: 'https://github.com/CPSC-1517/CPSC-1517.github.io/issues/new' },
             { text: 'Moodle', link: 'https://moodle.nait.ca' },
@@ -50,13 +50,13 @@ module.exports = {
 
             '/razor/': [
                 '',
-                'setup',
-                'syntax',
-                'layoutPages',
-                'forms',
-                'usingBootstrap',
-                'validationHelpers',
-                'extras'
+                // 'setup',
+                // 'syntax',
+                // 'layoutPages',
+                // 'forms',
+                // 'usingBootstrap',
+                // 'validationHelpers',
+                // 'extras'
             ],
 
             '/clientserver/': [
